@@ -25,6 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install PDF validation tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - name: Build and verify library
         env:
           GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
