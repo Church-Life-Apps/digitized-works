@@ -1,0 +1,51 @@
+{
+  "site": {
+    "name": "Digitized Christian Works",
+    "description": "Carefully prepared digital editions of historic Christian writings."
+  },
+  "works": [
+    {
+      "id": "alford-greek-testament",
+      "author": "Henry Alford",
+      "title": "The Greek Testament",
+      "shortTitle": "The Greek Testament",
+      "description": "A critical and exegetical commentary on the Greek New Testament.",
+      "originalPublication": "London, 1868–1872",
+      "repository": "Church-Life-Apps/digitizing-alford",
+      "status": "available",
+      "documents": [
+        {"id": "volume-1-part-1", "label": "Volume 1, Part 1", "asset": "alford-nt-v1p1.pdf"},
+        {"id": "volume-1-part-2", "label": "Volume 1, Part 2", "asset": "alford-nt-v1p2.pdf"},
+        {"id": "volume-2-part-1", "label": "Volume 2, Part 1", "asset": "alford-nt-v2p1.pdf"},
+        {"id": "volume-2-part-2", "label": "Volume 2, Part 2", "asset": "alford-nt-v2p2.pdf"}
+      ]
+    },
+    {
+      "id": "govett-parables",
+      "author": "Robert Govett",
+      "title": "The Parables of the Kingdom",
+      "shortTitle": "The Parables of the Kingdom",
+      "description": "An exposition of the parables concerning the kingdom of heaven.",
+      "originalPublication": "Nineteenth-century edition",
+      "repository": "Church-Life-Apps/digitizing-govett-parables",
+      "status": "available",
+      "documents": [
+        {"id": "complete", "label": "Complete work", "asset": "govett-parables.pdf"}
+      ]
+    },
+    {
+      "id": "govett-revelation",
+      "author": "Robert Govett",
+      "title": "The Apocalypse Expounded by Scripture",
+      "shortTitle": "The Apocalypse Expounded",
+      "description": "A verse-by-verse exposition of the book of Revelation.",
+      "originalPublication": "Nineteenth-century edition",
+      "repository": "Church-Life-Apps/digitizing-govett-revelation",
+      "status": "available",
+      "documents": [
+        {"id": "complete", "label": "Complete work", "asset": "govett-revelation-v1.0.pdf"}
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Read the latest verified editions of carefully digitized historic Christian works.">
+    <meta name="theme-color" content="#f4f0e7">
+    <title>Digitized Christian Works</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#library">Skip to library</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Digitized Christian Works home">
+        <img src="assets/mark.svg" alt="" width="42" height="42">
+        <span>Digitized Christian Works</span>
+      </a>
+      <a class="about-link" href="#about">About</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">A growing digital library</p>
+        <h1 id="hero-title">Historic Christian works,<br>ready to read.</h1>
+        <p class="hero-copy">Carefully prepared editions in a quiet, accessible reader. Every title clearly identifies the version you are viewing and when it was last verified.</p>
+      </section>
+
+      <section class="library" id="library" aria-labelledby="library-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Available now</p>
+            <h2 id="library-title">The library</h2>
+          </div>
+          <label class="search">
+            <span class="sr-only">Search the library</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <input id="search" type="search" placeholder="Search by title or author" autocomplete="off">
+          </label>
+        </div>
+        <div id="site-status" class="site-status" role="status" aria-live="polite"></div>
+        <div id="book-grid" class="book-grid" aria-live="polite">
+          <div class="loading">Loading the library…</div>
+        </div>
+        <p id="empty-state" class="empty-state" hidden>No works match that search.</p>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">About this library</p>
+        <h2 id="about-title">Source fidelity without the friction.</h2>
+        <div class="about-grid">
+          <p>These editions preserve historic Christian writings while making them easier to search, navigate, and read. Each work links back to its source repository and release history.</p>
+          <p>The library checks for new stable releases automatically. If verification is overdue or an update cannot be safely imported, the site says so plainly instead of silently presenting an uncertain version.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Digitized Christian Works</p>
+      <p>Open texts, carefully prepared.</p>
+    </footer>
+  </body>
+</html>
+

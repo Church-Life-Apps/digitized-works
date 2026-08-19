@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#252b28">
+    <title>Reader · Digitized Christian Works</title>
+    <link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="../assets/reader.js" defer></script>
+  </head>
+  <body class="reader-page">
+    <a class="skip-link" href="#pdf-frame">Skip to document</a>
+    <header class="reader-header">
+      <a class="reader-home" href="../" aria-label="Back to library">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        <span>Library</span>
+      </a>
+      <div class="reader-identity">
+        <p id="reader-author"></p>
+        <h1 id="reader-title">Loading…</h1>
+      </div>
+      <div class="reader-actions">
+        <a id="open-pdf" class="action-link" href="#" target="_blank" rel="noopener">Open PDF</a>
+        <a id="download-pdf" class="action-link secondary" href="#" download>Download</a>
+      </div>
+    </header>
+
+    <section id="freshness-banner" class="freshness-banner" role="status" aria-live="polite"></section>
+
+    <nav class="document-bar" aria-label="Document selection and release information">
+      <label>
+        <span>Document</span>
+        <select id="document-select"></select>
+      </label>
+      <div class="release-summary">
+        <span id="release-version"></span>
+        <span aria-hidden="true">·</span>
+        <a id="release-link" href="#" target="_blank" rel="noopener">Release details</a>
+        <span aria-hidden="true">·</span>
+        <a id="repository-link" href="#" target="_blank" rel="noopener">Source repository</a>
+      </div>
+    </nav>
+
+    <main class="viewer-shell">
+      <iframe id="pdf-frame" title="PDF reader" allowfullscreen></iframe>
+      <div id="reader-error" class="reader-error" hidden>
+        <h2>This document could not be opened.</h2>
+        <p>The verified PDF is still available through the direct link above.</p>
+      </div>
+    </main>
+  </body>
+</html>
+
