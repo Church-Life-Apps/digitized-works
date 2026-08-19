@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Digitized Christian Works",
-    "description": "Carefully prepared digital editions of historic Christian writings."
+    "description": "A library of digitized Christian books available to read online or download."
   },
   "works": [
     {
@@ -48,4 +48,3 @@
     }
   ]
 }
-
