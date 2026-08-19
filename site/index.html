@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#f4f0e7">
     <title>Digitized Christian Works</title>
     <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <script src="assets/theme.js"></script>
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/app.js" defer></script>
   </head>
@@ -17,13 +18,19 @@
         <img src="assets/mark.svg" alt="" width="42" height="42">
         <span>Digitized Christian Works</span>
       </a>
-      <a class="about-link" href="#about">About</a>
+      <div class="header-actions">
+        <div class="theme-picker" aria-label="Color theme">
+          <button class="theme-button" type="button" data-theme="system" aria-pressed="true">System</button>
+          <button class="theme-button" type="button" data-theme="light" aria-pressed="false">Light</button>
+          <button class="theme-button" type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        </div>
+        <a class="about-link" href="#about">About</a>
+      </div>
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Digitized Christian Works</h1>
-        <p class="hero-copy">A library of digitized Christian books available to read online or download.</p>
+      <section class="intro" aria-label="Introduction">
+        <p>A library of digitized Christian books available to read online or download.</p>
       </section>
 
       <section class="library" id="library" aria-labelledby="library-title">

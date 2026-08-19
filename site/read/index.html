@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#252b28">
     <title>Reader · Digitized Christian Works</title>
     <link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+    <script src="../assets/theme.js"></script>
     <link rel="stylesheet" href="../assets/styles.css">
     <script src="../assets/reader.js" defer></script>
   </head>
@@ -21,6 +22,11 @@
         <h1 id="reader-title">Loading…</h1>
       </div>
       <div class="reader-actions">
+        <div class="theme-picker reader-theme-picker" aria-label="Color theme">
+          <button class="theme-button" type="button" data-theme="system" aria-pressed="true">System</button>
+          <button class="theme-button" type="button" data-theme="light" aria-pressed="false">Light</button>
+          <button class="theme-button" type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        </div>
         <a id="open-pdf" class="action-link" href="#" target="_blank" rel="noopener">Open PDF</a>
         <a id="download-pdf" class="action-link secondary" href="#" download>Download</a>
       </div>
@@ -51,4 +57,3 @@
     </main>
   </body>
 </html>
-

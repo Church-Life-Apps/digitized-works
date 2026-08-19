@@ -6,7 +6,8 @@ BASE = "http://127.0.0.1:8877"
 OUT = Path(__file__).resolve().parents[1] / "generated" / "screenshots"
 OUT.mkdir(parents=True, exist_ok=True)
 
-with sync_playwright() as p:\n    browser = p.chromium.launch(headless=True, executable_path="/snap/bin/chromium")
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True, executable_path="/snap/bin/chromium")
     page = browser.new_page(viewport={"width": 1440, "height": 1000}, device_scale_factor=1)
     console_errors = []
     page.on("console", lambda message: console_errors.append(f"console {message.type}: {message.text}") if message.type == "error" else None)
@@ -32,5 +33,5 @@ with sync_playwright() as p:\n    browser = p.chromium.launch(headless=True, exe
     assert mobile.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth")
 
     if console_errors:
-        raise SystemExit("\n".join(console_errors))
+        raise SystemExit(chr(10).join(console_errors))
     browser.close()
