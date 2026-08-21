@@ -13,6 +13,7 @@
       "originalPublication": "London, 1868–1872",
       "repository": "Church-Life-Apps/digitizing-alford",
       "status": "available",
+      "reviewStatus": "ready",
       "documents": [
         {"id": "volume-1-part-1", "label": "Volume 1, Part 1", "asset": "alford-nt-v1p1.pdf"},
         {"id": "volume-1-part-2", "label": "Volume 1, Part 2", "asset": "alford-nt-v1p2.pdf"},
@@ -29,6 +30,7 @@
       "originalPublication": "Nineteenth-century edition",
       "repository": "Church-Life-Apps/digitizing-govett-parables",
       "status": "available",
+      "reviewStatus": "ready",
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "govett-parables.pdf"}
       ]
@@ -42,6 +44,7 @@
       "originalPublication": "Nineteenth-century edition",
       "repository": "Church-Life-Apps/digitizing-govett-revelation",
       "status": "available",
+      "reviewStatus": "in-progress",
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "govett-revelation-v1.0.pdf"}
       ]

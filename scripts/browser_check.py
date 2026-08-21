@@ -16,6 +16,10 @@ with sync_playwright() as p:
     page.goto(BASE + "/", wait_until="networkidle")
     page.screenshot(path=str(OUT / "home-desktop-latest.png"), full_page=True)
     assert page.locator(".book-card").count() == 3
+    assert page.locator(".work-group.ready .book-card").count() == 2
+    assert page.locator(".work-group.in-progress .book-card").count() == 1
+    assert page.locator(".review-chip.ready").count() == 2
+    assert page.locator(".review-chip.in-progress").count() == 1
     assert "All titles current" in page.locator("#site-status").inner_text()
 
     page.goto(BASE + "/read/?work=alford-greek-testament&document=volume-1-part-1", wait_until="networkidle")
@@ -23,6 +27,7 @@ with sync_playwright() as p:
     frame.locator("#numPages").wait_for(state="visible", timeout=30000)
     page.wait_for_function("document.querySelector('#pdf-frame').contentDocument.querySelector('#numPages').textContent.trim() !== '0'", timeout=60000)
     pages = frame.locator("#numPages").inner_text().strip()
+    assert "Ready for review" in page.locator("#review-banner").inner_text()
     page.screenshot(path=str(OUT / "reader-desktop-latest.png"), full_page=False)
     print(f"reader loaded {pages} pages")
 

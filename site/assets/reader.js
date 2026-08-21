@@ -35,6 +35,17 @@ function freshnessFor(work) {
   };
 }
 
+function renderReviewStatus(work) {
+  const banner = document.querySelector("#review-banner");
+  if (work.reviewStatus === "ready") {
+    banner.className = "review-banner ready";
+    banner.innerHTML = `<strong>Ready for review</strong><span>Feedback is welcome. Please include the title, document, and PDF page with any comments.</span>`;
+  } else {
+    banner.className = "review-banner in-progress";
+    banner.innerHTML = `<strong>Work in progress</strong><span>This edition is available to preview, but review is not yet requested.</span>`;
+  }
+}
+
 function setDocument(work, documentItem) {
   const pdfUrl = new URL(`../${documentItem.pdf}`, window.location.href).href;
   const viewerUrl = new URL("../vendor/pdfjs/web/viewer.html", window.location.href);
@@ -67,6 +78,7 @@ async function initializeReader() {
     document.querySelector("#release-version").textContent = `Showing ${work.release.tag}`;
     document.querySelector("#release-link").href = work.release.url;
     document.querySelector("#repository-link").href = `https://github.com/${work.repository}`;
+    renderReviewStatus(work);
 
     const selector = document.querySelector("#document-select");
     work.documents.forEach((item) => {
@@ -96,4 +108,3 @@ async function initializeReader() {
 }
 
 initializeReader();
-

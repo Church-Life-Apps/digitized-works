@@ -48,16 +48,32 @@ function readerUrl(work, document) {
   return `read/?${params}`;
 }
 
+function reviewFor(work) {
+  if (work.reviewStatus === "ready") {
+    return {
+      state: "ready",
+      label: "Ready for review",
+      action: "Review this work",
+    };
+  }
+  return {
+    state: "in-progress",
+    label: "In progress",
+    action: "Preview work in progress",
+  };
+}
+
 function bookCard(work) {
   const firstDocument = work.documents[0];
   const freshness = freshnessFor(work);
+  const review = reviewFor(work);
   const card = document.createElement("article");
   card.className = "book-card";
   card.dataset.search = `${work.title} ${work.author}`.toLowerCase();
   card.innerHTML = `
     <div class="book-topline">
       <p class="book-author"></p>
-      <span class="freshness-chip ${freshness.state}"></span>
+      <span class="review-chip ${review.state}"></span>
     </div>
     <h3></h3>
     <p class="book-description"></p>
@@ -66,27 +82,60 @@ function bookCard(work) {
       <div><dt>Documents</dt><dd></dd></div>
     </dl>
     <div class="book-actions">
-      <a class="read-button">Read now <span aria-hidden="true">→</span></a>
+      <a class="read-button ${review.state}"><span class="action-label"></span><span aria-hidden="true">→</span></a>
       <a class="details-link" target="_blank" rel="noopener">Release details</a>
     </div>`;
   card.querySelector(".book-author").textContent = work.author;
-  card.querySelector(".freshness-chip").textContent = freshness.label;
-  card.querySelector(".freshness-chip").title = freshness.detail;
+  card.querySelector(".review-chip").textContent = review.label;
   card.querySelector("h3").textContent = work.title;
   card.querySelector(".book-description").textContent = work.description;
   const values = card.querySelectorAll("dd");
   values[0].textContent = work.release.tag;
   values[1].textContent = work.documents.length === 1 ? "1 complete work" : `${work.documents.length} volumes`;
   card.querySelector(".read-button").href = readerUrl(work, firstDocument);
+  card.querySelector(".action-label").textContent = review.action;
   card.querySelector(".details-link").href = work.release.url;
   return card;
+}
+
+function workGroup(title, description, works, state) {
+  const section = document.createElement("section");
+  section.className = `work-group ${state}`;
+  section.innerHTML = `
+    <div class="work-group-heading">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="book-grid"></div>`;
+  section.querySelector("h3").textContent = title;
+  section.querySelector("p").textContent = description;
+  const groupGrid = section.querySelector(".book-grid");
+  works.forEach((work) => groupGrid.append(bookCard(work)));
+  return section;
 }
 
 function renderWorks(query = "") {
   const normalized = query.trim().toLowerCase();
   grid.replaceChildren();
   const matches = catalog.works.filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
-  matches.forEach((work) => grid.append(bookCard(work)));
+  const ready = matches.filter((work) => work.reviewStatus === "ready");
+  const inProgress = matches.filter((work) => work.reviewStatus !== "ready");
+  if (ready.length) {
+    grid.append(workGroup(
+      "Ready for review",
+      "These editions are stable enough for outside feedback.",
+      ready,
+      "ready",
+    ));
+  }
+  if (inProgress.length) {
+    grid.append(workGroup(
+      "In progress",
+      "These editions are available to preview, but review is not yet requested.",
+      inProgress,
+      "in-progress",
+    ));
+  }
   emptyState.hidden = matches.length !== 0;
 }
 
@@ -118,4 +167,3 @@ async function loadCatalog() {
 }
 
 loadCatalog();
-

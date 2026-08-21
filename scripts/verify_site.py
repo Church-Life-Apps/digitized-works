@@ -33,6 +33,14 @@ def main() -> int:
         fail("unsupported catalog schema")
     if len(catalog.get("works", [])) != 3:
         fail("expected exactly three initial works")
+    review_statuses = {work["id"]: work.get("reviewStatus") for work in catalog["works"]}
+    expected_review_statuses = {
+        "alford-greek-testament": "ready",
+        "govett-parables": "ready",
+        "govett-revelation": "in-progress",
+    }
+    if review_statuses != expected_review_statuses:
+        fail(f"unexpected review statuses: {review_statuses}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
     if len(documents) != 6:
         fail("expected six initial PDFs")
@@ -55,4 +63,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
