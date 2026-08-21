@@ -148,6 +148,7 @@ def sync(config_path: pathlib.Path, output: pathlib.Path, cache: pathlib.Path) -
         "generatedAt": checked_at,
         "site": config["site"],
         "works": generated_works,
+        "plannedWorks": config.get("plannedWorks", []),
     }
     (output / "catalog.json").write_text(json.dumps(catalog, indent=2) + "\n", encoding="utf-8")
     return catalog
@@ -171,4 +172,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

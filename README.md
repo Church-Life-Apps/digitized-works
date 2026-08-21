@@ -5,6 +5,7 @@ A static reading library for the latest verified editions produced by the Church
 ## What it does
 
 - Presents every available work in a clear, searchable library.
+- Shows researched future titles separately as planned works.
 - Opens PDFs in a bundled PDF.js reader with search, thumbnails, zoom, and navigation.
 - Imports only the latest published, non-prerelease GitHub release.
 - Validates every expected PDF before an atomic GitHub Pages deployment.

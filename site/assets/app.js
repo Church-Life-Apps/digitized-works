@@ -114,10 +114,43 @@ function workGroup(title, description, works, state) {
   return section;
 }
 
+function plannedCard(work) {
+  const card = document.createElement("article");
+  card.className = "planned-card";
+  card.innerHTML = `
+    <div class="book-topline">
+      <p class="book-author"></p>
+      <span class="review-chip planned">Planned</span>
+    </div>
+    <h4></h4>
+    <p class="book-description"></p>
+    <p class="source-status ${work.sourceStatus === "Source research ongoing" ? "researching" : "found"}"></p>`;
+  card.querySelector(".book-author").textContent = work.author;
+  card.querySelector("h4").textContent = work.title;
+  card.querySelector(".book-description").textContent = work.description;
+  card.querySelector(".source-status").textContent = work.sourceStatus;
+  return card;
+}
+
+function plannedGroup(works) {
+  const section = document.createElement("section");
+  section.className = "work-group planned";
+  section.innerHTML = `
+    <div class="work-group-heading">
+      <h3>Planned works</h3>
+      <p>Source editions are being evaluated before digitization begins.</p>
+    </div>
+    <div class="planned-grid"></div>`;
+  const plannedGrid = section.querySelector(".planned-grid");
+  works.forEach((work) => plannedGrid.append(plannedCard(work)));
+  return section;
+}
+
 function renderWorks(query = "") {
   const normalized = query.trim().toLowerCase();
   grid.replaceChildren();
   const matches = catalog.works.filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
+  const plannedMatches = (catalog.plannedWorks || []).filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
   const ready = matches.filter((work) => work.reviewStatus === "ready");
   const inProgress = matches.filter((work) => work.reviewStatus !== "ready");
   if (ready.length) {
@@ -136,7 +169,10 @@ function renderWorks(query = "") {
       "in-progress",
     ));
   }
-  emptyState.hidden = matches.length !== 0;
+  if (plannedMatches.length) {
+    grid.append(plannedGroup(plannedMatches));
+  }
+  emptyState.hidden = matches.length !== 0 || plannedMatches.length !== 0;
 }
 
 function renderStatus() {

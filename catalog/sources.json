@@ -49,5 +49,98 @@
         {"id": "complete", "label": "Complete work", "asset": "govett-revelation-v1.0.pdf"}
       ]
     }
+  ],
+  "plannedWorks": [
+    {
+      "id": "conybeare-howson-life-epistles-st-paul",
+      "author": "W. J. Conybeare and J. S. Howson",
+      "title": "The Life and Epistles of St. Paul",
+      "description": "A historical and biographical study of Paul, originally published in two volumes.",
+      "sourceStatus": "Public-domain scans found"
+    },
+    {
+      "id": "schaff-popular-commentary-new-testament",
+      "author": "Philip Schaff",
+      "title": "A Popular Commentary on the New Testament",
+      "description": "A four-volume commentary covering the whole New Testament.",
+      "sourceStatus": "Public-domain scans found"
+    },
+    {
+      "id": "howson-companions-st-paul",
+      "author": "John S. Howson",
+      "title": "The Companions of St. Paul",
+      "description": "Studies of the people who accompanied Paul in his ministry and travels.",
+      "sourceStatus": "Public-domain scan found"
+    },
+    {
+      "id": "simpson-names-of-jesus",
+      "author": "A. B. Simpson",
+      "title": "The Names of Jesus",
+      "description": "A sixteen-chapter study of names and titles of Jesus.",
+      "sourceStatus": "Digital source found"
+    },
+    {
+      "id": "ramsay-st-paul-traveller",
+      "author": "William Mitchell Ramsay",
+      "title": "St. Paul the Traveller and the Roman Citizen",
+      "description": "A historical and geographical study of Paul's travels and Roman setting.",
+      "sourceStatus": "Public-domain scan found"
+    },
+    {
+      "id": "augustine-on-the-trinity",
+      "author": "Augustine of Hippo",
+      "title": "On the Trinity",
+      "description": "Augustine's theological treatise on the Christian doctrine of the Trinity.",
+      "sourceStatus": "Public-domain scans found"
+    },
+    {
+      "id": "govett-twofoldness-divine-truth",
+      "author": "Robert Govett",
+      "title": "The Twofoldness of Divine Truth",
+      "description": "An examination of paired and seemingly contrasting truths in Scripture.",
+      "sourceStatus": "Public-domain scan found"
+    },
+    {
+      "id": "morgan-exposition-whole-bible",
+      "author": "G. Campbell Morgan",
+      "title": "An Exposition of the Whole Bible",
+      "description": "A chapter-by-chapter exposition of the Bible in one volume.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "luther-commentary-galatians",
+      "author": "Martin Luther",
+      "title": "Commentary on Galatians",
+      "description": "Luther's exposition of Paul's Epistle to the Galatians.",
+      "sourceStatus": "Public-domain scan found"
+    },
+    {
+      "id": "bruce-training-twelve",
+      "author": "Alexander Balmain Bruce",
+      "title": "The Training of the Twelve",
+      "description": "A study of Christ's preparation of the twelve disciples for their work.",
+      "sourceStatus": "Public-domain scan found"
+    },
+    {
+      "id": "neander-general-history-christian-religion",
+      "author": "Augustus Neander",
+      "title": "General History of the Christian Religion and Church",
+      "description": "A five-volume history of Christianity and the church.",
+      "sourceStatus": "Public-domain scans found"
+    },
+    {
+      "id": "wordsworth-church-history",
+      "author": "Christopher Wordsworth",
+      "title": "A Church History",
+      "description": "A four-volume history of the Christian church.",
+      "sourceStatus": "Public-domain scans found"
+    },
+    {
+      "id": "eusebius-preparation-gospel",
+      "author": "Eusebius of Caesarea",
+      "title": "Preparation for the Gospel",
+      "description": "Eusebius's apologetic work preserved in the complete Gifford translation.",
+      "sourceStatus": "Public-domain scan found"
+    }
   ]
 }
