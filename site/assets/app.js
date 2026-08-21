@@ -114,35 +114,39 @@ function workGroup(title, description, works, state) {
   return section;
 }
 
-function plannedCard(work) {
+function upcomingCard(work) {
+  const inProgress = work.projectStatus === "in-progress";
   const card = document.createElement("article");
   card.className = "planned-card";
   card.innerHTML = `
     <div class="book-topline">
       <p class="book-author"></p>
-      <span class="review-chip planned">Planned</span>
+      <span class="review-chip ${inProgress ? "in-progress" : "planned"}"></span>
     </div>
     <h4></h4>
     <p class="book-description"></p>
     <p class="source-status ${work.sourceStatus === "Source research ongoing" ? "researching" : "found"}"></p>`;
   card.querySelector(".book-author").textContent = work.author;
+  card.querySelector(".review-chip").textContent = inProgress ? "In progress" : "Planned";
   card.querySelector("h4").textContent = work.title;
   card.querySelector(".book-description").textContent = work.description;
   card.querySelector(".source-status").textContent = work.sourceStatus;
   return card;
 }
 
-function plannedGroup(works) {
+function upcomingGroup(title, description, works, state) {
   const section = document.createElement("section");
-  section.className = "work-group planned";
+  section.className = `work-group ${state}`;
   section.innerHTML = `
     <div class="work-group-heading">
-      <h3>Planned works</h3>
-      <p>Source editions are being evaluated before digitization begins.</p>
+      <h3></h3>
+      <p></p>
     </div>
     <div class="planned-grid"></div>`;
-  const plannedGrid = section.querySelector(".planned-grid");
-  works.forEach((work) => plannedGrid.append(plannedCard(work)));
+  section.querySelector("h3").textContent = title;
+  section.querySelector("p").textContent = description;
+  const upcomingGrid = section.querySelector(".planned-grid");
+  works.forEach((work) => upcomingGrid.append(upcomingCard(work)));
   return section;
 }
 
@@ -150,9 +154,11 @@ function renderWorks(query = "") {
   const normalized = query.trim().toLowerCase();
   grid.replaceChildren();
   const matches = catalog.works.filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
-  const plannedMatches = (catalog.plannedWorks || []).filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
+  const upcomingMatches = (catalog.plannedWorks || []).filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
   const ready = matches.filter((work) => work.reviewStatus === "ready");
   const inProgress = matches.filter((work) => work.reviewStatus !== "ready");
+  const unreleased = upcomingMatches.filter((work) => work.projectStatus === "in-progress");
+  const planned = upcomingMatches.filter((work) => work.projectStatus !== "in-progress");
   if (ready.length) {
     grid.append(workGroup(
       "Ready for review",
@@ -169,10 +175,23 @@ function renderWorks(query = "") {
       "in-progress",
     ));
   }
-  if (plannedMatches.length) {
-    grid.append(plannedGroup(plannedMatches));
+  if (unreleased.length) {
+    grid.append(upcomingGroup(
+      "Digitization in progress",
+      "Work has begun, but no preview or release is available yet.",
+      unreleased,
+      "unreleased",
+    ));
   }
-  emptyState.hidden = matches.length !== 0 || plannedMatches.length !== 0;
+  if (planned.length) {
+    grid.append(upcomingGroup(
+      "Planned works",
+      "Source editions are being evaluated before digitization begins.",
+      planned,
+      "planned",
+    ));
+  }
+  emptyState.hidden = matches.length !== 0 || upcomingMatches.length !== 0;
 }
 
 function renderStatus() {

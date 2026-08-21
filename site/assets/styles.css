@@ -177,6 +177,7 @@ button, input, select { font: inherit; }
 .load-error { color: var(--error); }
 .empty-state { padding: 4rem; text-align: center; color: var(--muted); }
 .planned-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; }
+.work-group.unreleased .planned-grid { grid-template-columns: minmax(0, 558px); }
 .planned-card { padding: 1.35rem; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 0.65rem; background: color-mix(in srgb, var(--card) 76%, var(--paper)); }
 .planned-card .book-topline { min-height: 2.1rem; align-items: flex-start; }
 .planned-card .review-chip { flex: 0 0 auto; }

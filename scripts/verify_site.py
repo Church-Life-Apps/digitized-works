@@ -43,9 +43,12 @@ def main() -> int:
         fail(f"unexpected review statuses: {review_statuses}")
     planned_works = catalog.get("plannedWorks", [])
     if len(planned_works) != 28:
-        fail(f"expected 28 planned works, found {len(planned_works)}")
+        fail(f"expected 28 upcoming works, found {len(planned_works)}")
     if len({work["id"] for work in planned_works}) != 28:
-        fail("planned work IDs must be unique")
+        fail("upcoming work IDs must be unique")
+    unreleased = [work for work in planned_works if work.get("projectStatus") == "in-progress"]
+    if [work["id"] for work in unreleased] != ["conybeare-howson-life-epistles-st-paul"]:
+        fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
     if len(documents) != 6:
         fail("expected six initial PDFs")
