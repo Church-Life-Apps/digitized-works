@@ -20,8 +20,8 @@ with sync_playwright() as p:
     assert page.locator(".work-group.in-progress .book-card").count() == 1
     assert page.locator(".review-chip.ready").count() == 2
     assert page.locator(".review-chip.in-progress").count() == 1
-    assert page.locator(".planned-card").count() == 13
-    assert page.locator(".review-chip.planned").count() == 13
+    assert page.locator(".planned-card").count() == 28
+    assert page.locator(".review-chip.planned").count() == 28
     assert "All titles current" in page.locator("#site-status").inner_text()
 
     page.goto(BASE + "/read/?work=alford-greek-testament&document=volume-1-part-1", wait_until="networkidle")

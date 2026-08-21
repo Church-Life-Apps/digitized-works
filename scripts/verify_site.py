@@ -42,9 +42,9 @@ def main() -> int:
     if review_statuses != expected_review_statuses:
         fail(f"unexpected review statuses: {review_statuses}")
     planned_works = catalog.get("plannedWorks", [])
-    if len(planned_works) != 13:
-        fail(f"expected 13 planned works, found {len(planned_works)}")
-    if len({work["id"] for work in planned_works}) != 13:
+    if len(planned_works) != 28:
+        fail(f"expected 28 planned works, found {len(planned_works)}")
+    if len({work["id"] for work in planned_works}) != 28:
         fail("planned work IDs must be unique")
     documents = [document for work in catalog["works"] for document in work["documents"]]
     if len(documents) != 6:

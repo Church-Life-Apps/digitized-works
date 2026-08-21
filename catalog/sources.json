@@ -141,6 +141,111 @@
       "title": "Preparation for the Gospel",
       "description": "Eusebius's apologetic work preserved in the complete Gifford translation.",
       "sourceStatus": "Public-domain scan found"
+    },
+    {
+      "id": "gill-exposition-whole-bible",
+      "author": "John Gill",
+      "title": "Exposition of the Whole Bible",
+      "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "jfb-commentary-whole-bible",
+      "author": "Robert Jamieson, A. R. Fausset, and David Brown",
+      "title": "Commentary Critical and Explanatory on the Whole Bible",
+      "description": "The whole-Bible commentary commonly known as Jamieson-Fausset-Brown.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "barnes-notes-whole-bible",
+      "author": "Albert Barnes",
+      "title": "Barnes' Notes on the Bible",
+      "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "wesley-explanatory-notes",
+      "author": "John Wesley",
+      "title": "Explanatory Notes upon the Bible",
+      "description": "A concise commentary covering the Old and New Testaments.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "robertson-word-pictures-new-testament",
+      "author": "Archibald Thomas Robertson",
+      "title": "Word Pictures in the New Testament",
+      "description": "A six-volume study of New Testament language and interpretation.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "calvin-commentaries",
+      "author": "John Calvin",
+      "title": "Calvin's Commentaries",
+      "description": "Calvin's commentaries on most books of the Bible.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "vincent-word-studies-new-testament",
+      "author": "Marvin R. Vincent",
+      "title": "Word Studies in the New Testament",
+      "description": "A four-volume study of words, language, and interpretation in the New Testament.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "keil-delitzsch-old-testament-commentary",
+      "author": "C. F. Keil and Franz Delitzsch",
+      "title": "Commentary on the Old Testament",
+      "description": "A multi-volume verse-by-verse commentary on the entire Old Testament.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "kelly-major-works-commentary",
+      "author": "William Kelly",
+      "title": "Major Works Commentary",
+      "description": "Kelly's collected expositions and lectures on books of the Bible.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "coates-commentaries-letters-tracts",
+      "author": "Charles A. Coates",
+      "title": "Commentaries, Letters, and Tracts",
+      "description": "Coates' collected chapter-based expositions and other biblical writings.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "pink-gleanings-pentateuch-joshua",
+      "author": "Arthur W. Pink",
+      "title": "Gleanings in Genesis, Exodus, and Joshua",
+      "description": "Pink's chapter-based expositions of Genesis, Exodus, and Joshua.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "mackintosh-notes-pentateuch",
+      "author": "Charles H. Mackintosh",
+      "title": "Notes on the Pentateuch",
+      "description": "A six-volume exposition of the five books of Moses.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "rossier-commentary-histories",
+      "author": "Henri L. Rossier",
+      "title": "Commentary on the Historical Books",
+      "description": "Rossier's expositions of the historical books of the Old Testament.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "lange-commentary-holy-scriptures",
+      "author": "Johann Peter Lange",
+      "title": "A Commentary on the Holy Scriptures",
+      "description": "A multi-volume theological and homiletical commentary on the Bible.",
+      "sourceStatus": "Source research ongoing"
+    },
+    {
+      "id": "scofield-reference-notes",
+      "author": "C. I. Scofield",
+      "title": "Scofield Reference Notes",
+      "description": "The explanatory notes from the Scofield Reference Bible.",
+      "sourceStatus": "Source research ongoing"
     }
   ]
 }
