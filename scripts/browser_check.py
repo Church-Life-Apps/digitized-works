@@ -21,6 +21,7 @@ with sync_playwright() as p:
     assert page.locator(".work-group.unreleased").count() == 0
     assert page.locator(".review-chip.ready").count() == 2
     assert page.locator(".book-card .review-chip.in-progress").count() == 2
+    assert page.locator(".feedback-link:visible").count() == 2
     assert page.locator(".work-group.in-progress .book-card.unreleased h3").inner_text() == "The Life and Epistles of St. Paul"
     assert "Not available yet" in page.locator(".book-card.unreleased").inner_text()
     assert page.locator(".planned-card").count() == 27
@@ -33,6 +34,7 @@ with sync_playwright() as p:
     page.wait_for_function("document.querySelector('#pdf-frame').contentDocument.querySelector('#numPages').textContent.trim() !== '0'", timeout=60000)
     pages = frame.locator("#numPages").inner_text().strip()
     assert "Ready for review" in page.locator("#review-banner").inner_text()
+    assert page.locator("#review-feedback-link:visible").count() == 1
     page.screenshot(path=str(OUT / "reader-desktop-latest.png"), full_page=False)
     print(f"reader loaded {pages} pages")
 

@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: read
+  discussions: write
   pages: write
   id-token: write
 
@@ -27,6 +28,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install PDF validation tools
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Create release review discussions
+        env:
+          SOURCE_GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
+          DISCUSSION_GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/ensure_release_discussions.py
       - name: Build and verify library
         env:
           GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
@@ -48,4 +54,3 @@ jobs:
       - name: Deploy atomically
         id: deployment
         uses: actions/deploy-pages@v4
-

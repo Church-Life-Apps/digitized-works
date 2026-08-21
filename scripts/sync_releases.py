@@ -17,6 +17,7 @@ import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "catalog" / "sources.json"
+DEFAULT_DISCUSSIONS = ROOT / ".cache" / "release-discussions.json"
 USER_AGENT = "digitized-works-release-sync/1.0"
 
 
@@ -93,8 +94,16 @@ def latest_release(repository: str, token: str | None) -> dict:
     return release
 
 
-def sync(config_path: pathlib.Path, output: pathlib.Path, cache: pathlib.Path) -> dict:
+def sync(
+    config_path: pathlib.Path,
+    output: pathlib.Path,
+    cache: pathlib.Path,
+    discussions_path: pathlib.Path = DEFAULT_DISCUSSIONS,
+) -> dict:
     config = json.loads(config_path.read_text(encoding="utf-8"))
+    discussions = {}
+    if discussions_path.exists():
+        discussions = json.loads(discussions_path.read_text(encoding="utf-8"))
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     output_pdfs = output / "pdfs"
     output_pdfs.mkdir(parents=True, exist_ok=True)
@@ -129,8 +138,7 @@ def sync(config_path: pathlib.Path, output: pathlib.Path, cache: pathlib.Path) -
                 }
             )
 
-        generated_works.append(
-            {
+        generated_work = {
                 **{key: value for key, value in work.items() if key != "documents"},
                 "documents": generated_documents,
                 "release": {
@@ -141,7 +149,10 @@ def sync(config_path: pathlib.Path, output: pathlib.Path, cache: pathlib.Path) -
                 },
                 "freshness": {"state": "current", "checkedAt": checked_at},
             }
-        )
+        discussion = discussions.get(work["id"])
+        if discussion and discussion.get("tag") == release["tag_name"]:
+            generated_work["reviewDiscussionUrl"] = discussion["url"]
+        generated_works.append(generated_work)
 
     catalog = {
         "schemaVersion": 1,
@@ -159,9 +170,10 @@ def main() -> int:
     parser.add_argument("--config", type=pathlib.Path, default=DEFAULT_CONFIG)
     parser.add_argument("--output", type=pathlib.Path, required=True)
     parser.add_argument("--cache", type=pathlib.Path, default=ROOT / ".cache" / "releases")
+    parser.add_argument("--discussions", type=pathlib.Path, default=DEFAULT_DISCUSSIONS)
     args = parser.parse_args()
     try:
-        catalog = sync(args.config, args.output, args.cache)
+        catalog = sync(args.config, args.output, args.cache, args.discussions)
     except (SyncError, OSError, subprocess.SubprocessError, ValueError) as exc:
         print(f"sync failed: {exc}", file=sys.stderr)
         return 1

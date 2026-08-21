@@ -39,7 +39,12 @@ function renderReviewStatus(work) {
   const banner = document.querySelector("#review-banner");
   if (work.reviewStatus === "ready") {
     banner.className = "review-banner ready";
-    banner.innerHTML = `<strong>Ready for review</strong><span>Feedback is welcome. Please include the title, document, and PDF page with any comments.</span>`;
+    banner.innerHTML = `<strong>Ready for review</strong><span>Feedback is welcome. Please include the document and PDF page with any comments.</span><a id="review-feedback-link" target="_blank" rel="noopener" hidden>Leave feedback on this version →</a>`;
+    if (work.reviewDiscussionUrl) {
+      const link = banner.querySelector("#review-feedback-link");
+      link.href = work.reviewDiscussionUrl;
+      link.hidden = false;
+    }
   } else {
     banner.className = "review-banner in-progress";
     banner.innerHTML = `<strong>Work in progress</strong><span>This edition is available to preview, but review is not yet requested.</span>`;

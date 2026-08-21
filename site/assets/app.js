@@ -83,7 +83,10 @@ function bookCard(work) {
     </dl>
     <div class="book-actions">
       <a class="read-button ${review.state}"><span class="action-label"></span><span aria-hidden="true">→</span></a>
-      <a class="details-link" target="_blank" rel="noopener">Release details</a>
+      <div class="book-links">
+        <a class="feedback-link" target="_blank" rel="noopener" hidden>Leave feedback</a>
+        <a class="details-link" target="_blank" rel="noopener">Release details</a>
+      </div>
     </div>`;
   card.querySelector(".book-author").textContent = work.author;
   card.querySelector(".review-chip").textContent = review.label;
@@ -95,6 +98,11 @@ function bookCard(work) {
   card.querySelector(".read-button").href = readerUrl(work, firstDocument);
   card.querySelector(".action-label").textContent = review.action;
   card.querySelector(".details-link").href = work.release.url;
+  if (work.reviewDiscussionUrl) {
+    const feedbackLink = card.querySelector(".feedback-link");
+    feedbackLink.href = work.reviewDiscussionUrl;
+    feedbackLink.hidden = false;
+  }
   return card;
 }
 

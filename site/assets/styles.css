@@ -173,6 +173,8 @@ button, input, select { font: inherit; }
 .read-button.in-progress { color: var(--ink); background: transparent; border: 1px solid var(--line); }
 .read-button.in-progress:hover { background: var(--paper-deep); }
 .details-link { color: var(--muted); font-size: 0.76rem; text-underline-offset: 0.22rem; }
+.book-links { display: grid; gap: 0.45rem; }
+.feedback-link { color: var(--review); font-size: 0.78rem; font-weight: 700; text-underline-offset: 0.22rem; }
 .loading, .load-error { grid-column: 1 / -1; padding: 4rem; text-align: center; color: var(--muted); border: 1px dashed var(--line); }
 .load-error { color: var(--error); }
 .empty-state { padding: 4rem; text-align: center; color: var(--muted); }
@@ -208,6 +210,7 @@ footer { padding: 2rem max(2rem, calc((100vw - 1136px) / 2)); display: flex; jus
 .review-banner { min-height: 44px; padding: 0.58rem 1.1rem; display: flex; justify-content: center; align-items: center; gap: 0.45rem; font-size: 0.78rem; }
 .review-banner.ready { color: var(--review); background: var(--review-bg); }
 .review-banner.in-progress { color: var(--progress); background: var(--progress-bg); }
+.review-banner a { margin-left: 0.4rem; font-weight: 700; text-underline-offset: 0.2rem; }
 .document-bar { min-height: 50px; padding: 0.45rem 1.1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--reader-text); background: var(--reader-bar); border-bottom: 1px solid var(--reader-border); font-size: 0.75rem; }
 .document-bar label { display: flex; align-items: center; gap: 0.55rem; }
 .document-bar label span { color: var(--reader-muted); }
@@ -252,6 +255,7 @@ footer { padding: 2rem max(2rem, calc((100vw - 1136px) / 2)); display: flex; jus
   .reader-theme-picker .theme-button { min-height: 1.8rem; padding: 0.35rem 0.42rem; font-size: 0.55rem; }
   .freshness-banner { padding: 0.45rem 0.7rem; align-items: start; flex-direction: column; gap: 0.1rem; }
   .review-banner { padding: 0.45rem 0.7rem; align-items: start; flex-direction: column; gap: 0.1rem; }
+  .review-banner a { margin-left: 0; }
   .document-bar { padding: 0.45rem 0.7rem; }
   .document-bar label span, .release-summary a:not(#release-link), .release-summary span { display: none; }
   .document-bar select { max-width: 180px; }

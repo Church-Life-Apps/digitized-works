@@ -41,6 +41,16 @@ def main() -> int:
     }
     if review_statuses != expected_review_statuses:
         fail(f"unexpected review statuses: {review_statuses}")
+    for work in catalog["works"]:
+        if work["reviewStatus"] == "ready":
+            if "reviewDiscussionUrl" not in work:
+                fail(f"review discussion missing for {work['id']}")
+            if not work["reviewDiscussionUrl"].startswith(
+                "https://github.com/Church-Life-Apps/digitized-works/discussions/"
+            ):
+                fail(f"invalid review discussion URL for {work['id']}")
+        elif "reviewDiscussionUrl" in work:
+            fail(f"non-reviewable work has a review discussion: {work['id']}")
     planned_works = catalog.get("plannedWorks", [])
     if len(planned_works) != 28:
         fail(f"expected 28 upcoming works, found {len(planned_works)}")
