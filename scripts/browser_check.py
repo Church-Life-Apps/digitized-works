@@ -15,15 +15,15 @@ with sync_playwright() as p:
 
     page.goto(BASE + "/", wait_until="networkidle")
     page.screenshot(path=str(OUT / "home-desktop-latest.png"), full_page=True)
-    assert page.locator(".book-card").count() == 3
+    assert page.locator(".book-card").count() == 4
     assert page.locator(".work-group.ready .book-card").count() == 2
-    assert page.locator(".work-group.in-progress .book-card").count() == 1
+    assert page.locator(".work-group.in-progress .book-card").count() == 2
+    assert page.locator(".work-group.unreleased").count() == 0
     assert page.locator(".review-chip.ready").count() == 2
-    assert page.locator(".book-card .review-chip.in-progress").count() == 1
-    assert page.locator(".planned-card").count() == 28
-    assert page.locator(".work-group.unreleased .planned-card").count() == 1
-    assert page.locator(".work-group.unreleased .review-chip.in-progress").count() == 1
-    assert page.locator(".work-group.unreleased h4").inner_text() == "The Life and Epistles of St. Paul"
+    assert page.locator(".book-card .review-chip.in-progress").count() == 2
+    assert page.locator(".work-group.in-progress .book-card.unreleased h3").inner_text() == "The Life and Epistles of St. Paul"
+    assert "Not available yet" in page.locator(".book-card.unreleased").inner_text()
+    assert page.locator(".planned-card").count() == 27
     assert page.locator(".review-chip.planned").count() == 27
     assert "All titles current" in page.locator("#site-status").inner_text()
 
@@ -39,7 +39,7 @@ with sync_playwright() as p:
     mobile = browser.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=1)
     mobile.goto(BASE + "/", wait_until="networkidle")
     mobile.screenshot(path=str(OUT / "home-mobile-latest.png"), full_page=True)
-    assert mobile.locator(".book-card").count() == 3
+    assert mobile.locator(".book-card").count() == 4
     assert mobile.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth")
 
     if console_errors:

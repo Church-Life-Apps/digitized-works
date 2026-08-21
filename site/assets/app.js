@@ -114,20 +114,39 @@ function workGroup(title, description, works, state) {
   return section;
 }
 
+function unreleasedCard(work) {
+  const card = document.createElement("article");
+  card.className = "book-card unreleased";
+  card.dataset.search = `${work.title} ${work.author}`.toLowerCase();
+  card.innerHTML = `
+    <div class="book-topline">
+      <p class="book-author"></p>
+      <span class="review-chip in-progress">In progress</span>
+    </div>
+    <h3></h3>
+    <p class="book-description"></p>
+    <dl class="book-meta">
+      <div><dt>Release</dt><dd>Not available yet</dd></div>
+      <div><dt>Preview</dt><dd>Not available yet</dd></div>
+    </dl>`;
+  card.querySelector(".book-author").textContent = work.author;
+  card.querySelector("h3").textContent = work.title;
+  card.querySelector(".book-description").textContent = work.description;
+  return card;
+}
+
 function upcomingCard(work) {
-  const inProgress = work.projectStatus === "in-progress";
   const card = document.createElement("article");
   card.className = "planned-card";
   card.innerHTML = `
     <div class="book-topline">
       <p class="book-author"></p>
-      <span class="review-chip ${inProgress ? "in-progress" : "planned"}"></span>
+      <span class="review-chip planned">Planned</span>
     </div>
     <h4></h4>
     <p class="book-description"></p>
     <p class="source-status ${work.sourceStatus === "Source research ongoing" ? "researching" : "found"}"></p>`;
   card.querySelector(".book-author").textContent = work.author;
-  card.querySelector(".review-chip").textContent = inProgress ? "In progress" : "Planned";
   card.querySelector("h4").textContent = work.title;
   card.querySelector(".book-description").textContent = work.description;
   card.querySelector(".source-status").textContent = work.sourceStatus;
@@ -167,21 +186,16 @@ function renderWorks(query = "") {
       "ready",
     ));
   }
-  if (inProgress.length) {
-    grid.append(workGroup(
+  if (inProgress.length || unreleased.length) {
+    const section = workGroup(
       "In progress",
-      "These editions are available to preview, but review is not yet requested.",
+      "These editions are still being digitized or prepared for review.",
       inProgress,
       "in-progress",
-    ));
-  }
-  if (unreleased.length) {
-    grid.append(upcomingGroup(
-      "Digitization in progress",
-      "Work has begun, but no preview or release is available yet.",
-      unreleased,
-      "unreleased",
-    ));
+    );
+    const inProgressGrid = section.querySelector(".book-grid");
+    unreleased.forEach((work) => inProgressGrid.append(unreleasedCard(work)));
+    grid.append(section);
   }
   if (planned.length) {
     grid.append(upcomingGroup(
