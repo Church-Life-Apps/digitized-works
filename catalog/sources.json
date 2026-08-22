@@ -46,7 +46,7 @@
       "status": "available",
       "reviewStatus": "in-progress",
       "documents": [
-        {"id": "complete", "label": "Complete work", "asset": "govett-revelation-v1.0.pdf"}
+        {"id": "complete", "label": "Complete work", "asset": "govett-revelation-v1.1.pdf"}
       ]
     }
   ],
@@ -64,7 +64,8 @@
       "author": "Philip Schaff",
       "title": "A Popular Commentary on the New Testament",
       "description": "A four-volume commentary covering the whole New Testament.",
-      "sourceStatus": "Public-domain scans found"
+      "projectStatus": "in-progress",
+      "sourceStatus": "Digitization in progress"
     },
     {
       "id": "howson-companions-st-paul",

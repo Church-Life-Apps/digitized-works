@@ -57,7 +57,10 @@ def main() -> int:
     if len({work["id"] for work in planned_works}) != 28:
         fail("upcoming work IDs must be unique")
     unreleased = [work for work in planned_works if work.get("projectStatus") == "in-progress"]
-    if [work["id"] for work in unreleased] != ["conybeare-howson-life-epistles-st-paul"]:
+    if [work["id"] for work in unreleased] != [
+        "conybeare-howson-life-epistles-st-paul",
+        "schaff-popular-commentary-new-testament",
+    ]:
         fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
     if len(documents) != 6:
