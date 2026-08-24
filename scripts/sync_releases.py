@@ -116,7 +116,7 @@ def sync(
         generated_documents = []
 
         for document in work["documents"]:
-            asset_name = document["asset"]
+            asset_name = document["asset"].replace("{tag}", release["tag_name"])
             if asset_name not in assets:
                 raise SyncError(
                     f"Expected {asset_name} in {work['repository']} release {release['tag_name']}"
@@ -132,6 +132,7 @@ def sync(
             generated_documents.append(
                 {
                     **document,
+                    "asset": asset_name,
                     **verification,
                     "pdf": f"pdfs/{work['id']}/{asset_name}",
                     "releaseAssetUrl": asset["browser_download_url"],

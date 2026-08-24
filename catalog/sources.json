@@ -46,7 +46,7 @@
       "status": "available",
       "reviewStatus": "in-progress",
       "documents": [
-        {"id": "complete", "label": "Complete work", "asset": "govett-revelation-v1.1.pdf"}
+        {"id": "complete", "label": "Complete work", "asset": "govett-revelation-{tag}.pdf"}
       ]
     }
   ],
