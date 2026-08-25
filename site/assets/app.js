@@ -189,7 +189,7 @@ function renderWorks(query = "") {
   if (ready.length) {
     grid.append(workGroup(
       "In Review",
-      "These editions are currently under review.",
+      "These digital editions are being reviewed and refined with future print editions in mind.",
       ready,
       "ready",
     ));
@@ -197,7 +197,7 @@ function renderWorks(query = "") {
   if (inProgress.length || unreleased.length) {
     const section = workGroup(
       "In progress",
-      "These editions are still being digitized or prepared for review.",
+      "These works are being restored for digital reading and eventual print editions.",
       inProgress,
       "in-progress",
     );
@@ -208,7 +208,7 @@ function renderWorks(query = "") {
   if (planned.length) {
     grid.append(upcomingGroup(
       "Planned works",
-      "Source editions are being evaluated before digitization begins.",
+      "Source editions are being evaluated for future digital restoration and print.",
       planned,
       "planned",
     ));
