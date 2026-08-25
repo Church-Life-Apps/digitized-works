@@ -48,6 +48,20 @@
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "govett-revelation-{tag}.pdf"}
       ]
+    },
+    {
+      "id": "howson-companions-st-paul",
+      "author": "John Saul Howson",
+      "title": "The Companions of St. Paul",
+      "shortTitle": "The Companions of St. Paul",
+      "description": "Studies of Barnabas, Lydia, Luke, and other people who accompanied Paul in his ministry and travels.",
+      "originalPublication": "London, 1883",
+      "repository": "Church-Life-Apps/digitizing-howson-companions",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {"id": "complete", "label": "Complete work", "asset": "howson-companions-{tag}.pdf"}
+      ]
     }
   ],
   "plannedWorks": [
@@ -66,13 +80,6 @@
       "description": "A four-volume commentary covering the whole New Testament.",
       "projectStatus": "in-progress",
       "sourceStatus": "Digitization in progress"
-    },
-    {
-      "id": "howson-companions-st-paul",
-      "author": "John S. Howson",
-      "title": "The Companions of St. Paul",
-      "description": "Studies of the people who accompanied Paul in his ministry and travels.",
-      "sourceStatus": "No verified complete digital-text edition found"
     },
     {
       "id": "simpson-names-of-jesus",

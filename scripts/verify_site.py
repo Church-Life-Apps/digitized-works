@@ -31,13 +31,14 @@ def main() -> int:
     catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
     if catalog.get("schemaVersion") != 1:
         fail("unsupported catalog schema")
-    if len(catalog.get("works", [])) != 3:
-        fail("expected exactly three initial works")
+    if len(catalog.get("works", [])) != 4:
+        fail("expected exactly four available works")
     review_statuses = {work["id"]: work.get("reviewStatus") for work in catalog["works"]}
     expected_review_statuses = {
         "alford-greek-testament": "ready",
         "govett-parables": "ready",
         "govett-revelation": "ready",
+        "howson-companions-st-paul": "ready",
     }
     if review_statuses != expected_review_statuses:
         fail(f"unexpected review statuses: {review_statuses}")
@@ -52,9 +53,9 @@ def main() -> int:
         elif "reviewDiscussionUrl" in work:
             fail(f"non-reviewable work has a review discussion: {work['id']}")
     planned_works = catalog.get("plannedWorks", [])
-    if len(planned_works) != 28:
-        fail(f"expected 28 upcoming works, found {len(planned_works)}")
-    if len({work["id"] for work in planned_works}) != 28:
+    if len(planned_works) != 27:
+        fail(f"expected 27 upcoming works, found {len(planned_works)}")
+    if len({work["id"] for work in planned_works}) != 27:
         fail("upcoming work IDs must be unique")
     unreleased = [work for work in planned_works if work.get("projectStatus") == "in-progress"]
     if [work["id"] for work in unreleased] != [
@@ -63,8 +64,8 @@ def main() -> int:
     ]:
         fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
-    if len(documents) != 6:
-        fail("expected six initial PDFs")
+    if len(documents) != 7:
+        fail("expected seven available PDFs")
     for document in documents:
         path = root / document["pdf"]
         if not path.exists():
