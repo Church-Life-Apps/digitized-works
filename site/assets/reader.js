@@ -39,7 +39,7 @@ function renderReviewStatus(work) {
   const banner = document.querySelector("#review-banner");
   if (work.reviewStatus === "ready") {
     banner.className = "review-banner ready";
-    banner.innerHTML = `<strong>Ready for review</strong><span>Feedback is welcome. Please include the document and PDF page with any comments.</span><a id="review-feedback-link" target="_blank" rel="noopener" hidden>Leave feedback on this version →</a>`;
+    banner.innerHTML = `<strong>In Review</strong><span>Feedback is welcome. Please include the document and PDF page with any comments.</span><a id="review-feedback-link" target="_blank" rel="noopener" hidden>Leave feedback on this version →</a>`;
     if (work.reviewDiscussionUrl) {
       const link = banner.querySelector("#review-feedback-link");
       link.href = work.reviewDiscussionUrl;

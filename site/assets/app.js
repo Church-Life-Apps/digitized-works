@@ -52,7 +52,7 @@ function reviewFor(work) {
   if (work.reviewStatus === "ready") {
     return {
       state: "ready",
-      label: "Ready for review",
+      label: "In Review",
       action: "Review this work",
     };
   }
@@ -188,7 +188,7 @@ function renderWorks(query = "") {
   const planned = upcomingMatches.filter((work) => work.projectStatus !== "in-progress");
   if (ready.length) {
     grid.append(workGroup(
-      "Ready for review",
+      "In Review",
       "These editions are stable enough for outside feedback.",
       ready,
       "ready",

@@ -38,7 +38,7 @@ with sync_playwright() as p:
     frame.locator("#numPages").wait_for(state="visible", timeout=30000)
     page.wait_for_function("document.querySelector('#pdf-frame').contentDocument.querySelector('#numPages').textContent.trim() !== '0'", timeout=60000)
     pages = frame.locator("#numPages").inner_text().strip()
-    assert "Ready for review" in page.locator("#review-banner").inner_text()
+    assert "In Review" in page.locator("#review-banner").inner_text()
     assert page.locator("#review-feedback-link:visible").count() == 1
     page.screenshot(path=str(OUT / "reader-desktop-latest.png"), full_page=False)
     print(f"reader loaded {pages} pages")

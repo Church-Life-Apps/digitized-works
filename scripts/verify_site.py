@@ -37,7 +37,7 @@ def main() -> int:
     expected_review_statuses = {
         "alford-greek-testament": "ready",
         "govett-parables": "ready",
-        "govett-revelation": "in-progress",
+        "govett-revelation": "ready",
     }
     if review_statuses != expected_review_statuses:
         fail(f"unexpected review statuses: {review_statuses}")

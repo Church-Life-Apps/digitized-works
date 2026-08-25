@@ -44,7 +44,7 @@
       "originalPublication": "Nineteenth-century edition",
       "repository": "Church-Life-Apps/digitizing-govett-revelation",
       "status": "available",
-      "reviewStatus": "in-progress",
+      "reviewStatus": "ready",
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "govett-revelation-{tag}.pdf"}
       ]
