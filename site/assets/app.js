@@ -189,7 +189,7 @@ function renderWorks(query = "") {
   if (ready.length) {
     grid.append(workGroup(
       "In Review",
-      "These editions are stable enough for outside feedback.",
+      "These editions are currently under review.",
       ready,
       "ready",
     ));
