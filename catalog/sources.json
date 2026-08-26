@@ -48,6 +48,20 @@
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "howson-companions-{tag}.pdf"}
       ]
+    },
+    {
+      "id": "schaff-popular-commentary-new-testament",
+      "author": "Philip Schaff",
+      "title": "A Popular Commentary on the New Testament",
+      "shortTitle": "Popular Commentary on the New Testament",
+      "description": "An interdenominational commentary on the New Testament edited by Philip Schaff. Volume I covers the general introduction and the Gospels of Matthew, Mark, and Luke.",
+      "originalPublication": "Edinburgh, 1879–1883",
+      "repository": "Church-Life-Apps/digitizing-schaff",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {"id": "volume-1", "label": "Volume I", "asset": "schaff-popular-commentary-vol1-v1.0.pdf"}
+      ]
     }
   ],
   "plannedWorks": [
@@ -56,14 +70,6 @@
       "author": "W. J. Conybeare and J. S. Howson",
       "title": "The Life and Epistles of St. Paul",
       "description": "A historical and biographical study of Paul, originally published in two volumes.",
-      "projectStatus": "in-progress",
-      "sourceStatus": "Digitization in progress"
-    },
-    {
-      "id": "schaff-popular-commentary-new-testament",
-      "author": "Philip Schaff",
-      "title": "A Popular Commentary on the New Testament",
-      "description": "A four-volume commentary covering the whole New Testament.",
       "projectStatus": "in-progress",
       "sourceStatus": "Digitization in progress"
     },
