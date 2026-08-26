@@ -22,20 +22,6 @@
       ]
     },
     {
-      "id": "govett-parables",
-      "author": "Robert Govett",
-      "title": "The Parables of the Kingdom",
-      "shortTitle": "The Parables of the Kingdom",
-      "description": "An exposition of the parables concerning the kingdom of heaven.",
-      "originalPublication": "Nineteenth-century edition",
-      "repository": "Church-Life-Apps/digitizing-govett-parables",
-      "status": "available",
-      "reviewStatus": "ready",
-      "documents": [
-        {"id": "complete", "label": "Complete work", "asset": "govett-parables.pdf"}
-      ]
-    },
-    {
       "id": "govett-revelation",
       "author": "Robert Govett",
       "title": "The Apocalypse Expounded by Scripture",
