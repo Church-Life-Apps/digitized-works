@@ -30,7 +30,7 @@
       "originalPublication": "Nineteenth-century edition",
       "repository": "Church-Life-Apps/digitizing-govett-revelation",
       "status": "available",
-      "reviewStatus": "ready",
+      "reviewStatus": "in-progress",
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "govett-revelation-{tag}.pdf"}
       ]
@@ -44,7 +44,7 @@
       "originalPublication": "London, 1883",
       "repository": "Church-Life-Apps/digitizing-howson-companions",
       "status": "available",
-      "reviewStatus": "ready",
+      "reviewStatus": "in-progress",
       "documents": [
         {"id": "complete", "label": "Complete work", "asset": "howson-companions-{tag}.pdf"}
       ]
@@ -58,7 +58,7 @@
       "originalPublication": "Edinburgh, 1879–1883",
       "repository": "Church-Life-Apps/digitizing-schaff",
       "status": "available",
-      "reviewStatus": "ready",
+      "reviewStatus": "in-progress",
       "documents": [
         {"id": "volume-1", "label": "Volume I", "asset": "schaff-popular-commentary-vol1-v1.0.pdf"}
       ]

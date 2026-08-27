@@ -151,7 +151,11 @@ def sync(
                 "freshness": {"state": "current", "checkedAt": checked_at},
             }
         discussion = discussions.get(work["id"])
-        if discussion and discussion.get("tag") == release["tag_name"]:
+        if (
+            work.get("reviewStatus") == "ready"
+            and discussion
+            and discussion.get("tag") == release["tag_name"]
+        ):
             generated_work["reviewDiscussionUrl"] = discussion["url"]
         generated_works.append(generated_work)
 
