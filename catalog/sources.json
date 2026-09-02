@@ -16,9 +16,13 @@
       "reviewStatus": "ready",
       "documents": [
         {"id": "volume-1-part-1", "label": "Volume 1, Part 1", "asset": "alford-nt-v1p1.pdf"},
+        {"id": "volume-1-part-1-6x9", "label": "Volume 1, Part 1 · 6×9 print edition", "asset": "alford-nt-v1p1-print-ready-6x9.pdf"},
         {"id": "volume-1-part-2", "label": "Volume 1, Part 2", "asset": "alford-nt-v1p2.pdf"},
+        {"id": "volume-1-part-2-6x9", "label": "Volume 1, Part 2 · 6×9 print edition", "asset": "alford-nt-v1p2-print-ready-6x9.pdf"},
         {"id": "volume-2-part-1", "label": "Volume 2, Part 1", "asset": "alford-nt-v2p1.pdf"},
-        {"id": "volume-2-part-2", "label": "Volume 2, Part 2", "asset": "alford-nt-v2p2.pdf"}
+        {"id": "volume-2-part-1-6x9", "label": "Volume 2, Part 1 · 6×9 print edition", "asset": "alford-nt-v2p1-print-ready-6x9.pdf"},
+        {"id": "volume-2-part-2", "label": "Volume 2, Part 2", "asset": "alford-nt-v2p2.pdf"},
+        {"id": "volume-2-part-2-6x9", "label": "Volume 2, Part 2 · 6×9 print edition", "asset": "alford-nt-v2p2-print-ready-6x9.pdf"}
       ]
     },
     {

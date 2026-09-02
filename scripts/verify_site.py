@@ -63,8 +63,22 @@ def main() -> int:
     ]:
         fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
-    if len(documents) != 7:
-        fail("expected seven available PDFs")
+    if len(documents) != 11:
+        fail("expected eleven available PDFs")
+    alford_documents = next(
+        work["documents"] for work in catalog["works"] if work["id"] == "alford-greek-testament"
+    )
+    expected_alford_6x9 = {
+        "alford-nt-v1p1-print-ready-6x9.pdf",
+        "alford-nt-v1p2-print-ready-6x9.pdf",
+        "alford-nt-v2p1-print-ready-6x9.pdf",
+        "alford-nt-v2p2-print-ready-6x9.pdf",
+    }
+    actual_alford_6x9 = {
+        document["asset"] for document in alford_documents if document["id"].endswith("-6x9")
+    }
+    if actual_alford_6x9 != expected_alford_6x9:
+        fail(f"unexpected Alford 6x9 PDFs: {actual_alford_6x9}")
     for document in documents:
         path = root / document["pdf"]
         if not path.exists():
