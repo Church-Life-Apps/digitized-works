@@ -38,7 +38,7 @@ def main() -> int:
         "alford-greek-testament": "ready",
         "howson-companions-st-paul": "in-progress",
         "schaff-popular-commentary-new-testament": "in-progress",
-        "conybeare-howson-life-epistles-st-paul": "in-progress",
+        "conybeare-howson-life-epistles-st-paul": "ready",
     }
     if review_statuses != expected_review_statuses:
         fail(f"unexpected review statuses: {review_statuses}")
