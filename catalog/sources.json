@@ -26,20 +26,6 @@
       ]
     },
     {
-      "id": "govett-revelation",
-      "author": "Robert Govett",
-      "title": "The Apocalypse Expounded by Scripture",
-      "shortTitle": "The Apocalypse Expounded",
-      "description": "A verse-by-verse exposition of the book of Revelation.",
-      "originalPublication": "Nineteenth-century edition",
-      "repository": "Church-Life-Apps/digitizing-govett-revelation",
-      "status": "available",
-      "reviewStatus": "in-progress",
-      "documents": [
-        {"id": "complete", "label": "Complete work", "asset": "govett-revelation-{tag}.pdf"}
-      ]
-    },
-    {
       "id": "howson-companions-st-paul",
       "author": "John Saul Howson",
       "title": "The Companions of St. Paul",
