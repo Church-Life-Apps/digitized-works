@@ -15,14 +15,46 @@
       "status": "available",
       "reviewStatus": "ready",
       "documents": [
-        {"id": "volume-1-part-1", "label": "Volume 1, Part 1", "asset": "alford-nt-v1p1.pdf"},
-        {"id": "volume-1-part-1-6x9", "label": "Volume 1, Part 1 · 6×9 print edition", "asset": "alford-nt-v1p1-print-ready-6x9.pdf"},
-        {"id": "volume-1-part-2", "label": "Volume 1, Part 2", "asset": "alford-nt-v1p2.pdf"},
-        {"id": "volume-1-part-2-6x9", "label": "Volume 1, Part 2 · 6×9 print edition", "asset": "alford-nt-v1p2-print-ready-6x9.pdf"},
-        {"id": "volume-2-part-1", "label": "Volume 2, Part 1", "asset": "alford-nt-v2p1.pdf"},
-        {"id": "volume-2-part-1-6x9", "label": "Volume 2, Part 1 · 6×9 print edition", "asset": "alford-nt-v2p1-print-ready-6x9.pdf"},
-        {"id": "volume-2-part-2", "label": "Volume 2, Part 2", "asset": "alford-nt-v2p2.pdf"},
-        {"id": "volume-2-part-2-6x9", "label": "Volume 2, Part 2 · 6×9 print edition", "asset": "alford-nt-v2p2-print-ready-6x9.pdf"}
+        {
+          "id": "volume-1-part-1",
+          "label": "Volume 1, Part 1",
+          "asset": "alford-nt-v1p1.pdf"
+        },
+        {
+          "id": "volume-1-part-1-6x9",
+          "label": "Volume 1, Part 1 · 6×9 print edition",
+          "asset": "alford-nt-v1p1-print-ready-6x9.pdf"
+        },
+        {
+          "id": "volume-1-part-2",
+          "label": "Volume 1, Part 2",
+          "asset": "alford-nt-v1p2.pdf"
+        },
+        {
+          "id": "volume-1-part-2-6x9",
+          "label": "Volume 1, Part 2 · 6×9 print edition",
+          "asset": "alford-nt-v1p2-print-ready-6x9.pdf"
+        },
+        {
+          "id": "volume-2-part-1",
+          "label": "Volume 2, Part 1",
+          "asset": "alford-nt-v2p1.pdf"
+        },
+        {
+          "id": "volume-2-part-1-6x9",
+          "label": "Volume 2, Part 1 · 6×9 print edition",
+          "asset": "alford-nt-v2p1-print-ready-6x9.pdf"
+        },
+        {
+          "id": "volume-2-part-2",
+          "label": "Volume 2, Part 2",
+          "asset": "alford-nt-v2p2.pdf"
+        },
+        {
+          "id": "volume-2-part-2-6x9",
+          "label": "Volume 2, Part 2 · 6×9 print edition",
+          "asset": "alford-nt-v2p2-print-ready-6x9.pdf"
+        }
       ]
     },
     {
@@ -36,7 +68,11 @@
       "status": "available",
       "reviewStatus": "in-progress",
       "documents": [
-        {"id": "complete", "label": "Complete work", "asset": "howson-companions-{tag}.pdf"}
+        {
+          "id": "complete",
+          "label": "Complete work",
+          "asset": "howson-companions-{tag}.pdf"
+        }
       ]
     },
     {
@@ -50,19 +86,33 @@
       "status": "available",
       "reviewStatus": "in-progress",
       "documents": [
-        {"id": "volume-1", "label": "Volume I", "asset": "schaff-popular-commentary-vol1-v1.0.pdf"}
+        {
+          "id": "volume-1",
+          "label": "Volume I",
+          "asset": "schaff-popular-commentary-vol1-v1.0.pdf"
+        }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "conybeare-howson-life-epistles-st-paul",
       "author": "W. J. Conybeare and J. S. Howson",
       "title": "The Life and Epistles of St. Paul",
-      "description": "A historical and biographical study of Paul, originally published in two volumes.",
-      "projectStatus": "in-progress",
-      "sourceStatus": "Digitization in progress"
-    },
+      "shortTitle": "The Life and Epistles of St. Paul",
+      "description": "A historical and biographical study of Paul, with the authors' own translation of his letters. Originally published in two volumes.",
+      "originalPublication": "New York, 1870",
+      "repository": "Church-Life-Apps/digitizing-conybeare-howson",
+      "status": "available",
+      "reviewStatus": "in-progress",
+      "documents": [
+        {
+          "id": "complete",
+          "label": "Complete work",
+          "asset": "conybeare-howson-life-epistles-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "simpson-names-of-jesus",
       "author": "A. B. Simpson",
