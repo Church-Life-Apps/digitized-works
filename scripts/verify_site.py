@@ -61,8 +61,8 @@ def main() -> int:
     if [work["id"] for work in unreleased] != []:
         fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
-    if len(documents) != 11:
-        fail("expected eleven available PDFs")
+    if len(documents) != 14:
+        fail("expected fourteen available PDFs")
     alford_documents = next(
         work["documents"] for work in catalog["works"] if work["id"] == "alford-greek-testament"
     )
