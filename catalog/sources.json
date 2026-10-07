@@ -80,7 +80,7 @@
       "author": "Philip Schaff",
       "title": "A Popular Commentary on the New Testament",
       "shortTitle": "Popular Commentary on the New Testament",
-      "description": "An interdenominational commentary on the New Testament edited by Philip Schaff. Volume I covers the general introduction and the Gospels of Matthew, Mark, and Luke.",
+      "description": "An interdenominational commentary on the New Testament edited by Philip Schaff, in four volumes covering the Gospels, Acts, the Epistles of Paul and Hebrews through Revelation.",
       "originalPublication": "Edinburgh, 1879–1883",
       "repository": "Church-Life-Apps/digitizing-schaff",
       "status": "available",
@@ -89,7 +89,22 @@
         {
           "id": "volume-1",
           "label": "Volume I",
-          "asset": "schaff-popular-commentary-vol1-v1.0.pdf"
+          "asset": "schaff-popular-commentary-vol1-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume II",
+          "asset": "schaff-popular-commentary-vol2-{tag}.pdf"
+        },
+        {
+          "id": "volume-3",
+          "label": "Volume III",
+          "asset": "schaff-popular-commentary-vol3-{tag}.pdf"
+        },
+        {
+          "id": "volume-4",
+          "label": "Volume IV",
+          "asset": "schaff-popular-commentary-vol4-{tag}.pdf"
         }
       ]
     },
