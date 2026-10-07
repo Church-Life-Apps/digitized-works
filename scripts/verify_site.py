@@ -57,6 +57,14 @@ def main() -> int:
         fail(f"expected 18 upcoming works, found {len(planned_works)}")
     if len({work["id"] for work in planned_works}) != 18:
         fail("upcoming work IDs must be unique")
+    skipped_works = catalog.get("skippedWorks", [])
+    if len(skipped_works) < 7:
+        fail(f"expected at least 7 skipped works, found {len(skipped_works)}")
+    for work in skipped_works:
+        if not work.get("skipReason") or not work.get("title"):
+            fail(f"skipped work missing title or reason: {work.get('id')}")
+    if {w["id"] for w in skipped_works} & {w["id"] for w in planned_works}:
+        fail("a work is both planned and skipped")
     unreleased = [work for work in planned_works if work.get("projectStatus") == "in-progress"]
     if [work["id"] for work in unreleased] != []:
         fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")

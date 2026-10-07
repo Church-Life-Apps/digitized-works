@@ -161,6 +161,7 @@ button, input, select { font: inherit; }
 .review-chip.ready { color: var(--review); background: var(--review-bg); }
 .review-chip.in-progress { color: var(--progress); background: var(--progress-bg); }
 .review-chip.planned { color: var(--planned); background: var(--planned-bg); }
+.review-chip.skipped { color: var(--muted); background: var(--planned-bg); }
 .book-card h3 { margin: 2.1rem 0 0.8rem; font-family: Georgia, "Times New Roman", serif; font-size: 2rem; line-height: 1.08; letter-spacing: -0.035em; }
 .book-description { margin: 0; color: var(--muted); font-family: Georgia, "Times New Roman", serif; line-height: 1.6; }
 .book-meta { margin: auto 0 1.5rem; padding-top: 2rem; display: flex; gap: 2.5rem; }
@@ -186,6 +187,8 @@ button, input, select { font: inherit; }
 .planned-card .book-description { font-size: 0.94rem; }
 .source-status { margin: 1.2rem 0 0; color: var(--muted); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.025em; }
 .source-status.researching { color: var(--warning); }
+.skip-reason { margin: 1.2rem 0 0; color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: 0.88rem; font-style: italic; }
+.skipped-card { opacity: 0.85; }
 
 .about { max-width: 1136px; margin: auto; padding: 8rem 2rem; }
 .about h2 { max-width: 800px; }

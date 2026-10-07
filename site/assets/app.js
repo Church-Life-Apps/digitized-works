@@ -161,6 +161,31 @@ function upcomingCard(work) {
   return card;
 }
 
+function skippedCard(work) {
+  const card = document.createElement("article");
+  card.className = "planned-card skipped-card";
+  card.innerHTML = `
+    <div class="book-topline">
+      <p class="book-author"></p>
+      <span class="review-chip skipped">Skipped</span>
+    </div>
+    <h4></h4>
+    <p class="book-description"></p>
+    <p class="skip-reason"></p>`;
+  card.querySelector(".book-author").textContent = work.author;
+  card.querySelector("h4").textContent = work.title;
+  card.querySelector(".book-description").textContent = work.description;
+  card.querySelector(".skip-reason").textContent = work.skipReason;
+  return card;
+}
+
+function skippedGroup(title, description, works) {
+  const section = upcomingGroup(title, description, [], "skipped");
+  const skippedGrid = section.querySelector(".planned-grid");
+  works.forEach((work) => skippedGrid.append(skippedCard(work)));
+  return section;
+}
+
 function upcomingGroup(title, description, works, state) {
   const section = document.createElement("section");
   section.className = `work-group ${state}`;
@@ -186,6 +211,7 @@ function renderWorks(query = "") {
   const inProgress = matches.filter((work) => work.reviewStatus !== "ready");
   const unreleased = upcomingMatches.filter((work) => work.projectStatus === "in-progress");
   const planned = upcomingMatches.filter((work) => work.projectStatus !== "in-progress");
+  const skipped = (catalog.skippedWorks || []).filter((work) => `${work.title} ${work.author}`.toLowerCase().includes(normalized));
   if (ready.length) {
     grid.append(workGroup(
       "In Review",
@@ -213,7 +239,14 @@ function renderWorks(query = "") {
       "planned",
     ));
   }
-  emptyState.hidden = matches.length !== 0 || upcomingMatches.length !== 0;
+  if (skipped.length) {
+    grid.append(skippedGroup(
+      "Skipped",
+      "These works were set aside because a publisher still sells a current edition.",
+      skipped,
+    ));
+  }
+  emptyState.hidden = matches.length !== 0 || upcomingMatches.length !== 0 || skipped.length !== 0;
 }
 
 function renderStatus() {

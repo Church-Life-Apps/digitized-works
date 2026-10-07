@@ -165,6 +165,7 @@ def sync(
         "site": config["site"],
         "works": generated_works,
         "plannedWorks": config.get("plannedWorks", []),
+        "skippedWorks": config.get("skippedWorks", []),
     }
     (output / "catalog.json").write_text(json.dumps(catalog, indent=2) + "\n", encoding="utf-8")
     return catalog

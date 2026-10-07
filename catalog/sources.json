@@ -254,5 +254,63 @@
       "description": "The explanatory notes from the Scofield Reference Bible.",
       "sourceStatus": "Existing digital text found"
     }
+  ],
+  "skippedWorks": [
+    {
+      "id": "simpson-names-of-jesus",
+      "author": "A. B. Simpson",
+      "title": "The Names of Jesus",
+      "description": "A sixteen-chapter study of names and titles of Jesus.",
+      "skipReason": "Still sold by Moody Publishers as a WingSpread ebook.",
+      "skippedAt": "2026-10-07"
+    },
+    {
+      "id": "ramsay-st-paul-traveller",
+      "author": "William Mitchell Ramsay",
+      "title": "St. Paul the Traveller and the Roman Citizen",
+      "description": "A historical and geographical study of Paul's travels and Roman setting.",
+      "skipReason": "Still sold by Kregel in a revised edition.",
+      "skippedAt": "2026-10-07"
+    },
+    {
+      "id": "augustine-on-the-trinity",
+      "author": "Augustine of Hippo",
+      "title": "On the Trinity",
+      "description": "Augustine's theological treatise on the Christian doctrine of the Trinity.",
+      "skipReason": "Modern translations are still sold by Catholic University of America Press and New City Press.",
+      "skippedAt": "2026-10-07"
+    },
+    {
+      "id": "govett-twofoldness-divine-truth",
+      "author": "Robert Govett",
+      "title": "The Twofoldness of Divine Truth",
+      "description": "An examination of paired and seemingly contrasting truths in Scripture.",
+      "skipReason": "Still sold by Schoettle Publishing.",
+      "skippedAt": "2026-10-07"
+    },
+    {
+      "id": "morgan-exposition-whole-bible",
+      "author": "G. Campbell Morgan",
+      "title": "An Exposition of the Whole Bible",
+      "description": "A chapter-by-chapter exposition of the Bible in one volume.",
+      "skipReason": "Still sold by Wipf & Stock.",
+      "skippedAt": "2026-10-07"
+    },
+    {
+      "id": "luther-commentary-galatians",
+      "author": "Martin Luther",
+      "title": "Commentary on Galatians",
+      "description": "Luther's exposition of Paul's Epistle to the Galatians.",
+      "skipReason": "Still sold by Crossway in its Classic Commentaries series.",
+      "skippedAt": "2026-10-07"
+    },
+    {
+      "id": "bruce-training-twelve",
+      "author": "Alexander Balmain Bruce",
+      "title": "The Training of the Twelve",
+      "description": "A study of Christ's preparation of the twelve disciples for their work.",
+      "skipReason": "Still sold by Kregel in a 2020 edition.",
+      "skippedAt": "2026-10-07"
+    }
   ]
 }
