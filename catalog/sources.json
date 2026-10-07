@@ -66,7 +66,7 @@
       "originalPublication": "London, 1883",
       "repository": "Church-Life-Apps/digitizing-howson-companions",
       "status": "available",
-      "reviewStatus": "in-progress",
+      "reviewStatus": "ready",
       "documents": [
         {
           "id": "complete",
@@ -84,7 +84,7 @@
       "originalPublication": "Edinburgh, 1879–1883",
       "repository": "Church-Life-Apps/digitizing-schaff",
       "status": "available",
-      "reviewStatus": "in-progress",
+      "reviewStatus": "ready",
       "documents": [
         {
           "id": "volume-1",

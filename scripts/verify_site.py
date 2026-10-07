@@ -36,8 +36,8 @@ def main() -> int:
     review_statuses = {work["id"]: work.get("reviewStatus") for work in catalog["works"]}
     expected_review_statuses = {
         "alford-greek-testament": "ready",
-        "howson-companions-st-paul": "in-progress",
-        "schaff-popular-commentary-new-testament": "in-progress",
+        "howson-companions-st-paul": "ready",
+        "schaff-popular-commentary-new-testament": "ready",
         "conybeare-howson-life-epistles-st-paul": "ready",
     }
     if review_statuses != expected_review_statuses:
