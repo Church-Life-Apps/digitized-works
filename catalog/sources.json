@@ -129,13 +129,6 @@
   ],
   "plannedWorks": [
     {
-      "id": "morgan-exposition-whole-bible",
-      "author": "G. Campbell Morgan",
-      "title": "An Exposition of the Whole Bible",
-      "description": "A chapter-by-chapter exposition of the Bible in one volume.",
-      "sourceStatus": "Complete digital text exists"
-    },
-    {
       "id": "luther-commentary-galatians",
       "author": "Martin Luther",
       "title": "Commentary on Galatians",
