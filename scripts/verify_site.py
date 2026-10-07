@@ -66,8 +66,11 @@ def main() -> int:
     if {w["id"] for w in skipped_works} & {w["id"] for w in planned_works}:
         fail("a work is both planned and skipped")
     unreleased = [work for work in planned_works if work.get("projectStatus") == "in-progress"]
-    if [work["id"] for work in unreleased] != []:
-        fail(f"unexpected unreleased works: {[work['id'] for work in unreleased]}")
+    if len(unreleased) > 1:
+        fail(f"the serial queue works one book at a time, found {[work['id'] for work in unreleased]}")
+    for work in planned_works:
+        if work.get("projectStatus") not in (None, "in-progress"):
+            fail(f"invalid projectStatus for {work['id']}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
     if len(documents) != 14:
         fail("expected fourteen available PDFs")
