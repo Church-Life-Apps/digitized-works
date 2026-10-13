@@ -31,14 +31,15 @@ def main() -> int:
     catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
     if catalog.get("schemaVersion") != 1:
         fail("unsupported catalog schema")
-    if len(catalog.get("works", [])) != 4:
-        fail("expected exactly four available works")
+    if len(catalog.get("works", [])) != 5:
+        fail("expected exactly five available works")
     review_statuses = {work["id"]: work.get("reviewStatus") for work in catalog["works"]}
     expected_review_statuses = {
         "alford-greek-testament": "ready",
         "howson-companions-st-paul": "ready",
         "schaff-popular-commentary-new-testament": "ready",
         "conybeare-howson-life-epistles-st-paul": "ready",
+        "neander-general-history-christian-religion": "ready",
     }
     if review_statuses != expected_review_statuses:
         fail(f"unexpected review statuses: {review_statuses}")
@@ -53,9 +54,9 @@ def main() -> int:
         elif "reviewDiscussionUrl" in work:
             fail(f"non-reviewable work has a review discussion: {work['id']}")
     planned_works = catalog.get("plannedWorks", [])
-    if len(planned_works) != 18:
-        fail(f"expected 18 upcoming works, found {len(planned_works)}")
-    if len({work["id"] for work in planned_works}) != 18:
+    if len(planned_works) != 17:
+        fail(f"expected 17 upcoming works, found {len(planned_works)}")
+    if len({work["id"] for work in planned_works}) != 17:
         fail("upcoming work IDs must be unique")
     skipped_works = catalog.get("skippedWorks", [])
     if len(skipped_works) < 7:
@@ -72,8 +73,8 @@ def main() -> int:
         if work.get("projectStatus") not in (None, "in-progress"):
             fail(f"invalid projectStatus for {work['id']}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
-    if len(documents) != 14:
-        fail("expected fourteen available PDFs")
+    if len(documents) != 20:
+        fail("expected twenty available PDFs")
     alford_documents = next(
         work["documents"] for work in catalog["works"] if work["id"] == "alford-greek-testament"
     )

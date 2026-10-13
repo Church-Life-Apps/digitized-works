@@ -125,17 +125,52 @@
           "asset": "conybeare-howson-life-epistles-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "neander-general-history-christian-religion",
       "author": "Augustus Neander",
       "title": "General History of the Christian Religion and Church",
-      "description": "A five-volume history of Christianity and the church.",
-      "sourceStatus": "No complete digital-text edition found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "General History of the Christian Religion",
+      "description": "Neander's history of Christianity and the church from the apostolic age to the eve of the Reformation, in Joseph Torrey's American translation, in five volumes with the separate 1881 General Index volume.",
+      "originalPublication": "Boston, 1871–1881",
+      "repository": "Church-Life-Apps/digitizing-neander",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "volume-1",
+          "label": "Volume I",
+          "asset": "neander-general-history-vol1-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume II",
+          "asset": "neander-general-history-vol2-{tag}.pdf"
+        },
+        {
+          "id": "volume-3",
+          "label": "Volume III",
+          "asset": "neander-general-history-vol3-{tag}.pdf"
+        },
+        {
+          "id": "volume-4",
+          "label": "Volume IV",
+          "asset": "neander-general-history-vol4-{tag}.pdf"
+        },
+        {
+          "id": "volume-5",
+          "label": "Volume V",
+          "asset": "neander-general-history-vol5-{tag}.pdf"
+        },
+        {
+          "id": "index",
+          "label": "Index Volume",
+          "asset": "neander-general-history-index-volume-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "wordsworth-church-history",
       "author": "Christopher Wordsworth",
