@@ -168,17 +168,42 @@
           "asset": "neander-general-history-index-volume-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "wordsworth-church-history",
       "author": "Christopher Wordsworth",
       "title": "A Church History",
-      "description": "A four-volume history of the Christian church.",
-      "sourceStatus": "No verified complete digital-text edition found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "A Church History",
+      "description": "Bishop Wordsworth's history of the Church from its founding to the Council of Chalcedon, A.D. 451, in four volumes, with the general index to the whole work in the fourth.",
+      "originalPublication": "London, 1881–1883",
+      "repository": "Church-Life-Apps/digitizing-wordsworth",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "volume-1",
+          "label": "Volume I",
+          "asset": "wordsworth-church-history-vol1-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume II",
+          "asset": "wordsworth-church-history-vol2-{tag}.pdf"
+        },
+        {
+          "id": "volume-3",
+          "label": "Volume III",
+          "asset": "wordsworth-church-history-vol3-{tag}.pdf"
+        },
+        {
+          "id": "volume-4",
+          "label": "Volume IV",
+          "asset": "wordsworth-church-history-vol4-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "eusebius-preparation-gospel",
       "author": "Eusebius of Caesarea",
