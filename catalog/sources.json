@@ -205,13 +205,6 @@
   ],
   "plannedWorks": [
     {
-      "id": "gill-exposition-whole-bible",
-      "author": "John Gill",
-      "title": "Exposition of the Whole Bible",
-      "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
       "id": "jfb-commentary-whole-bible",
       "author": "Robert Jamieson, A. R. Fausset, and David Brown",
       "title": "Commentary Critical and Explanatory on the Whole Bible",
@@ -374,6 +367,14 @@
       "description": "Eusebius's apologetic work preserved in the complete Gifford translation.",
       "skipReason": "Wipf & Stock still sells Gifford's translation new, in one volume and in a recent two-volume paperback and hardcover edition.",
       "skippedAt": "2026-10-14"
+    },
+    {
+      "id": "gill-exposition-whole-bible",
+      "author": "John Gill",
+      "title": "Exposition of the Whole Bible",
+      "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
+      "skipReason": "The Baptist Standard Bearer still sells the complete nine-volume set new in hardback, paperback and ebook.",
+      "skippedAt": "2026-10-15"
     }
   ]
 }
