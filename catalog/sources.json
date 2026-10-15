@@ -209,7 +209,8 @@
       "author": "Robert Jamieson, A. R. Fausset, and David Brown",
       "title": "Commentary Critical and Explanatory on the Whole Bible",
       "description": "The whole-Bible commentary commonly known as Jamieson-Fausset-Brown.",
-      "sourceStatus": "Existing digital text found"
+      "sourceStatus": "Existing digital text found",
+      "projectStatus": "in-progress"
     },
     {
       "id": "barnes-notes-whole-bible",
