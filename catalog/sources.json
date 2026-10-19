@@ -228,13 +228,6 @@
   ],
   "plannedWorks": [
     {
-      "id": "barnes-notes-whole-bible",
-      "author": "Albert Barnes",
-      "title": "Barnes' Notes on the Bible",
-      "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
       "id": "wesley-explanatory-notes",
       "author": "John Wesley",
       "title": "Explanatory Notes upon the Bible",
@@ -391,6 +384,14 @@
       "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
       "skipReason": "The Baptist Standard Bearer still sells the complete nine-volume set new in hardback, paperback and ebook.",
       "skippedAt": "2026-10-15"
+    },
+    {
+      "id": "barnes-notes-whole-bible",
+      "author": "Albert Barnes",
+      "title": "Barnes' Notes on the Bible",
+      "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
+      "skipReason": "Life Sentence Publishing (Aneko Press) is selling a new edition in paperback and Kindle, released book by book since 2024.",
+      "skippedAt": "2026-10-19"
     }
   ]
 }
