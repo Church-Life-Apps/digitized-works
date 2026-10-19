@@ -236,20 +236,6 @@
       "projectStatus": "in-progress"
     },
     {
-      "id": "robertson-word-pictures-new-testament",
-      "author": "Archibald Thomas Robertson",
-      "title": "Word Pictures in the New Testament",
-      "description": "A six-volume study of New Testament language and interpretation.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
-      "id": "calvin-commentaries",
-      "author": "John Calvin",
-      "title": "Calvin's Commentaries",
-      "description": "Calvin's commentaries on most books of the Bible.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
       "id": "vincent-word-studies-new-testament",
       "author": "Marvin R. Vincent",
       "title": "Word Studies in the New Testament",
@@ -264,41 +250,6 @@
       "sourceStatus": "Existing digital text found"
     },
     {
-      "id": "kelly-major-works-commentary",
-      "author": "William Kelly",
-      "title": "Major Works Commentary",
-      "description": "Kelly's collected expositions and lectures on books of the Bible.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
-      "id": "coates-commentaries-letters-tracts",
-      "author": "Charles A. Coates",
-      "title": "Commentaries, Letters, and Tracts",
-      "description": "Coates' collected chapter-based expositions and other biblical writings.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
-      "id": "pink-gleanings-pentateuch-joshua",
-      "author": "Arthur W. Pink",
-      "title": "Gleanings in Genesis, Exodus, and Joshua",
-      "description": "Pink's chapter-based expositions of Genesis, Exodus, and Joshua.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
-      "id": "mackintosh-notes-pentateuch",
-      "author": "Charles H. Mackintosh",
-      "title": "Notes on the Pentateuch",
-      "description": "A six-volume exposition of the five books of Moses.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
-      "id": "rossier-commentary-histories",
-      "author": "Henri L. Rossier",
-      "title": "Commentary on the Historical Books",
-      "description": "Rossier's expositions of the historical books of the Old Testament.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
       "id": "lange-commentary-holy-scriptures",
       "author": "Johann Peter Lange",
       "title": "A Commentary on the Holy Scriptures",
@@ -306,10 +257,17 @@
       "sourceStatus": "Existing digital text found"
     },
     {
-      "id": "scofield-reference-notes",
-      "author": "C. I. Scofield",
-      "title": "Scofield Reference Notes",
-      "description": "The explanatory notes from the Scofield Reference Bible.",
+      "id": "calvin-commentaries",
+      "author": "John Calvin",
+      "title": "Calvin's Commentaries",
+      "description": "Calvin's commentaries on most books of the Bible. We will cover every commentary except Genesis and Daniel, which Banner of Truth still sells.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "kelly-major-works-commentary",
+      "author": "William Kelly",
+      "title": "Bible Commentaries",
+      "description": "Kelly's expositions of books of the Bible. We will cover only the titles no publisher currently sells, such as Isaiah, Ezekiel, the Minor Prophets, Acts, Romans and Galatians.",
       "sourceStatus": "Existing digital text found"
     }
   ],
@@ -392,6 +350,54 @@
       "title": "Barnes' Notes on the Bible",
       "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
       "skipReason": "Life Sentence Publishing (Aneko Press) is selling a new edition in paperback and Kindle, released book by book since 2024.",
+      "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "robertson-word-pictures-new-testament",
+      "author": "Archibald Thomas Robertson",
+      "title": "Word Pictures in the New Testament",
+      "description": "A six-volume study of New Testament language and interpretation.",
+      "skipReason": "B&H Publishing is releasing a new 100th anniversary edition on November 1, 2026.",
+      "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "pink-gleanings-pentateuch-joshua",
+      "author": "Arthur W. Pink",
+      "title": "Gleanings in Genesis, Exodus, and Joshua",
+      "description": "Pink's chapter-based expositions of Genesis, Exodus, and Joshua.",
+      "skipReason": "Moody Publishers and Wakeman Trust still sell these books new.",
+      "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "rossier-commentary-histories",
+      "author": "Henri L. Rossier",
+      "title": "Commentary on the Historical Books",
+      "description": "Rossier's expositions of the historical books of the Old Testament.",
+      "skipReason": "Believers Bookshelf still sells these books, and most English translations are modern and under copyright.",
+      "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "coates-commentaries-letters-tracts",
+      "author": "Charles A. Coates",
+      "title": "Commentaries, Letters, and Tracts",
+      "description": "Coates' collected chapter-based expositions and other biblical writings.",
+      "skipReason": "Kingston Bible Trust still sells the Outlines series new.",
+      "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "mackintosh-notes-pentateuch",
+      "author": "Charles H. Mackintosh",
+      "title": "Notes on the Pentateuch",
+      "description": "A six-volume exposition of the five books of Moses.",
+      "skipReason": "Believers Bookshelf still sells a new six-volume set.",
+      "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "scofield-reference-notes",
+      "author": "C. I. Scofield",
+      "title": "Scofield Reference Notes",
+      "description": "The explanatory notes from the Scofield Reference Bible.",
+      "skipReason": "Oxford University Press still sells the 1917 Scofield notes.",
       "skippedAt": "2026-10-19"
     }
   ]
