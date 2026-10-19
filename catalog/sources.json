@@ -399,6 +399,22 @@
       "description": "The explanatory notes from the Scofield Reference Bible.",
       "skipReason": "Oxford University Press still sells the 1917 Scofield notes.",
       "skippedAt": "2026-10-19"
+    },
+    {
+      "id": "govett-parables",
+      "author": "Robert Govett",
+      "title": "The Parables of the Kingdom",
+      "description": "An exposition of the parables concerning the kingdom of heaven.",
+      "skipReason": "Schoettle Publishing still sells Govett on the Parables new.",
+      "skippedAt": "2026-08-26"
+    },
+    {
+      "id": "govett-revelation",
+      "author": "Robert Govett",
+      "title": "The Apocalypse Expounded by Scripture",
+      "description": "A verse-by-verse exposition of the book of Revelation.",
+      "skipReason": "Schoettle Publishing still sells Govett on Revelation new.",
+      "skippedAt": "2026-08-26"
     }
   ]
 }
