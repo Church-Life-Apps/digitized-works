@@ -232,7 +232,8 @@
       "author": "John Wesley",
       "title": "Explanatory Notes upon the Bible",
       "description": "A concise commentary covering the Old and New Testaments.",
-      "sourceStatus": "Existing digital text found"
+      "sourceStatus": "Existing digital text found",
+      "projectStatus": "in-progress"
     },
     {
       "id": "robertson-word-pictures-new-testament",
