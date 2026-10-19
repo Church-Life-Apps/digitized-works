@@ -201,17 +201,32 @@
           "asset": "wordsworth-church-history-vol4-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "jfb-commentary-whole-bible",
       "author": "Robert Jamieson, A. R. Fausset, and David Brown",
       "title": "Commentary Critical and Explanatory on the Whole Bible",
-      "description": "The whole-Bible commentary commonly known as Jamieson-Fausset-Brown.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "Commentary Critical and Explanatory",
+      "description": "The whole-Bible commentary commonly known as Jamieson-Fausset-Brown, in the abridged one-volume edition with its engraved plates and the Dictionary of Scripture Proper Names, set as two volumes: the Old Testament, and the New Testament with the Dictionary.",
+      "originalPublication": "Hartford, 1873",
+      "repository": "Church-Life-Apps/digitizing-jfb",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "volume-1",
+          "label": "Volume I",
+          "asset": "jfb-commentary-critical-explanatory-vol1-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume II",
+          "asset": "jfb-commentary-critical-explanatory-vol2-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "barnes-notes-whole-bible",
       "author": "Albert Barnes",
