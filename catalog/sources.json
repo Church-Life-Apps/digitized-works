@@ -224,17 +224,42 @@
           "asset": "jfb-commentary-critical-explanatory-vol2-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "wesley-explanatory-notes",
       "author": "John Wesley",
       "title": "Explanatory Notes upon the Bible",
-      "description": "A concise commentary covering the Old and New Testaments.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "Explanatory Notes upon the Bible",
+      "description": "Wesley's concise notes on the whole Bible, set with the Scripture text and marginal cross-references. The Old Testament comes from the Bristol quarto of 1765 in three volumes, and the New Testament from Wesley's revised text as the fourth.",
+      "originalPublication": "Bristol, 1765; New York, Carlton & Porter",
+      "repository": "Church-Life-Apps/digitizing-wesley",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "volume-1",
+          "label": "Volume I",
+          "asset": "wesley-explanatory-notes-old-testament-vol1-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume II",
+          "asset": "wesley-explanatory-notes-old-testament-vol2-{tag}.pdf"
+        },
+        {
+          "id": "volume-3",
+          "label": "Volume III",
+          "asset": "wesley-explanatory-notes-old-testament-vol3-{tag}.pdf"
+        },
+        {
+          "id": "volume-4",
+          "label": "Volume IV",
+          "asset": "wesley-explanatory-notes-new-testament-vol4-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "vincent-word-studies-new-testament",
       "author": "Marvin R. Vincent",
