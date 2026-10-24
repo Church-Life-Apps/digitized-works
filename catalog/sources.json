@@ -257,17 +257,42 @@
           "asset": "wesley-explanatory-notes-new-testament-vol4-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "vincent-word-studies-new-testament",
       "author": "Marvin R. Vincent",
       "title": "Word Studies in the New Testament",
-      "description": "A four-volume study of words, language, and interpretation in the New Testament.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "Word Studies in the New Testament",
+      "description": "Vincent's four-volume study of the Greek words of the New Testament, book by book, with notes on language, translation and interpretation and full English and Greek indexes.",
+      "originalPublication": "New York, Charles Scribner's Sons, 1887 plates (1897 and 1900 printings)",
+      "repository": "Church-Life-Apps/digitizing-vincent",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "volume-1",
+          "label": "Volume I",
+          "asset": "vincent-word-studies-vol1-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume II",
+          "asset": "vincent-word-studies-vol2-{tag}.pdf"
+        },
+        {
+          "id": "volume-3",
+          "label": "Volume III",
+          "asset": "vincent-word-studies-vol3-{tag}.pdf"
+        },
+        {
+          "id": "volume-4",
+          "label": "Volume IV",
+          "asset": "vincent-word-studies-vol4-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "keil-delitzsch-old-testament-commentary",
       "author": "C. F. Keil and Franz Delitzsch",
