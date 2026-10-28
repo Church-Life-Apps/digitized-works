@@ -290,17 +290,147 @@
           "asset": "vincent-word-studies-vol4-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "keil-delitzsch-old-testament-commentary",
       "author": "C. F. Keil and Franz Delitzsch",
-      "title": "Commentary on the Old Testament",
-      "description": "A multi-volume verse-by-verse commentary on the entire Old Testament.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "title": "Biblical Commentary on the Old Testament",
+      "shortTitle": "Commentary on the Old Testament",
+      "description": "Keil and Delitzsch's verse-by-verse commentary on the whole Old Testament from the Hebrew, in the 25-volume English translation of Clark's Foreign Theological Library, with introductions, notes and indexes.",
+      "originalPublication": "Edinburgh, T. & T. Clark, 1866–1891",
+      "repository": "Church-Life-Apps/digitizing-keil-delitzsch",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "volume-1",
+          "label": "Volume 1: Pentateuch I",
+          "asset": "keil-delitzsch-v01-{tag}.pdf"
+        },
+        {
+          "id": "volume-2",
+          "label": "Volume 2: Pentateuch II",
+          "asset": "keil-delitzsch-v02-{tag}.pdf"
+        },
+        {
+          "id": "volume-3",
+          "label": "Volume 3: Pentateuch III",
+          "asset": "keil-delitzsch-v03-{tag}.pdf"
+        },
+        {
+          "id": "volume-4",
+          "label": "Volume 4: Joshua, Judges, Ruth",
+          "asset": "keil-delitzsch-v04-{tag}.pdf"
+        },
+        {
+          "id": "volume-5",
+          "label": "Volume 5: Samuel",
+          "asset": "keil-delitzsch-v05-{tag}.pdf"
+        },
+        {
+          "id": "volume-6",
+          "label": "Volume 6: Kings",
+          "asset": "keil-delitzsch-v06-{tag}.pdf"
+        },
+        {
+          "id": "volume-7",
+          "label": "Volume 7: Chronicles",
+          "asset": "keil-delitzsch-v07-{tag}.pdf"
+        },
+        {
+          "id": "volume-8",
+          "label": "Volume 8: Ezra, Nehemiah, Esther",
+          "asset": "keil-delitzsch-v08-{tag}.pdf"
+        },
+        {
+          "id": "volume-9",
+          "label": "Volume 9: Job I",
+          "asset": "keil-delitzsch-v09-{tag}.pdf"
+        },
+        {
+          "id": "volume-10",
+          "label": "Volume 10: Job II",
+          "asset": "keil-delitzsch-v10-{tag}.pdf"
+        },
+        {
+          "id": "volume-11",
+          "label": "Volume 11: Psalms I",
+          "asset": "keil-delitzsch-v11-{tag}.pdf"
+        },
+        {
+          "id": "volume-12",
+          "label": "Volume 12: Psalms II",
+          "asset": "keil-delitzsch-v12-{tag}.pdf"
+        },
+        {
+          "id": "volume-13",
+          "label": "Volume 13: Psalms III",
+          "asset": "keil-delitzsch-v13-{tag}.pdf"
+        },
+        {
+          "id": "volume-14",
+          "label": "Volume 14: Proverbs I",
+          "asset": "keil-delitzsch-v14-{tag}.pdf"
+        },
+        {
+          "id": "volume-15",
+          "label": "Volume 15: Proverbs II",
+          "asset": "keil-delitzsch-v15-{tag}.pdf"
+        },
+        {
+          "id": "volume-16",
+          "label": "Volume 16: Song of Songs, Ecclesiastes",
+          "asset": "keil-delitzsch-v16-{tag}.pdf"
+        },
+        {
+          "id": "volume-17",
+          "label": "Volume 17: Isaiah I",
+          "asset": "keil-delitzsch-v17-{tag}.pdf"
+        },
+        {
+          "id": "volume-18",
+          "label": "Volume 18: Isaiah II",
+          "asset": "keil-delitzsch-v18-{tag}.pdf"
+        },
+        {
+          "id": "volume-19",
+          "label": "Volume 19: Jeremiah I",
+          "asset": "keil-delitzsch-v19-{tag}.pdf"
+        },
+        {
+          "id": "volume-20",
+          "label": "Volume 20: Jeremiah II, Lamentations",
+          "asset": "keil-delitzsch-v20-{tag}.pdf"
+        },
+        {
+          "id": "volume-21",
+          "label": "Volume 21: Ezekiel I",
+          "asset": "keil-delitzsch-v21-{tag}.pdf"
+        },
+        {
+          "id": "volume-22",
+          "label": "Volume 22: Ezekiel II",
+          "asset": "keil-delitzsch-v22-{tag}.pdf"
+        },
+        {
+          "id": "volume-23",
+          "label": "Volume 23: Daniel",
+          "asset": "keil-delitzsch-v23-{tag}.pdf"
+        },
+        {
+          "id": "volume-24",
+          "label": "Volume 24: Minor Prophets I",
+          "asset": "keil-delitzsch-v24-{tag}.pdf"
+        },
+        {
+          "id": "volume-25",
+          "label": "Volume 25: Minor Prophets II",
+          "asset": "keil-delitzsch-v25-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "lange-commentary-holy-scriptures",
       "author": "Johann Peter Lange",
