@@ -242,7 +242,7 @@ function renderWorks(query = "") {
   if (skipped.length) {
     grid.append(skippedGroup(
       "Skipped",
-      "These works were set aside because a publisher still sells a current edition.",
+      "These works were set aside because they are still under copyright, or because we could not find a usable old scan.",
       skipped,
     ));
   }

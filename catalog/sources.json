@@ -537,7 +537,7 @@
       "author": "A. B. Simpson",
       "title": "The Names of Jesus",
       "description": "A sixteen-chapter study of names and titles of Jesus.",
-      "skipReason": "Still sold by Moody Publishers as a WingSpread ebook.",
+      "skipReason": "We could not find an old public domain scan, only modern editions.",
       "skippedAt": "2026-10-07"
     },
     {
@@ -545,7 +545,7 @@
       "author": "G. Campbell Morgan",
       "title": "An Exposition of the Whole Bible",
       "description": "A chapter-by-chapter exposition of the Bible in one volume.",
-      "skipReason": "Still sold by Wipf & Stock.",
+      "skipReason": "First published in 1959, so it is likely still under copyright, and no open scan exists.",
       "skippedAt": "2026-10-07"
     },
     {
@@ -553,7 +553,7 @@
       "author": "Archibald Thomas Robertson",
       "title": "Word Pictures in the New Testament",
       "description": "A six-volume study of New Testament language and interpretation.",
-      "skipReason": "B&H Publishing is releasing a new 100th anniversary edition on November 1, 2026.",
+      "skipReason": "Volumes 5 and 6 remain under copyright until 2028 and 2029.",
       "skippedAt": "2026-10-19"
     },
     {
@@ -561,7 +561,7 @@
       "author": "Arthur W. Pink",
       "title": "Gleanings in Genesis, Exodus, and Joshua",
       "description": "Pink's chapter-based expositions of Genesis, Exodus, and Joshua.",
-      "skipReason": "Moody Publishers and Wakeman Trust still sell these books new.",
+      "skipReason": "Gleanings in Joshua is still under copyright.",
       "skippedAt": "2026-10-19"
     },
     {
@@ -569,7 +569,7 @@
       "author": "Henri L. Rossier",
       "title": "Commentary on the Historical Books",
       "description": "Rossier's expositions of the historical books of the Old Testament.",
-      "skipReason": "Believers Bookshelf still sells these books, and most English translations are modern and under copyright.",
+      "skipReason": "Most of the English translations are modern and still under copyright. Only Judges is old enough, and we found no scan of it.",
       "skippedAt": "2026-10-19"
     },
     {
@@ -577,7 +577,7 @@
       "author": "Charles A. Coates",
       "title": "Commentaries, Letters, and Tracts",
       "description": "Coates' collected chapter-based expositions and other biblical writings.",
-      "skipReason": "Kingston Bible Trust still sells the Outlines series new.",
+      "skipReason": "Many of these works were published after 1930 and are still under copyright in the US.",
       "skippedAt": "2026-10-19"
     },
     {
@@ -585,7 +585,7 @@
       "author": "Robert Govett",
       "title": "The Parables of the Kingdom",
       "description": "An exposition of the parables concerning the kingdom of heaven.",
-      "skipReason": "Schoettle Publishing still sells Govett on the Parables new.",
+      "skipReason": "Our earlier work used a 1989 edition, which is under copyright, and we have not confirmed an older scan.",
       "skippedAt": "2026-08-26"
     }
   ]
