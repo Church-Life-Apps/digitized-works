@@ -59,9 +59,9 @@ def main() -> int:
         elif "reviewDiscussionUrl" in work:
             fail(f"non-reviewable work has a review discussion: {work['id']}")
     planned_works = catalog.get("plannedWorks", [])
-    if len(planned_works) != 3:
-        fail(f"expected 3 upcoming works, found {len(planned_works)}")
-    if len({work["id"] for work in planned_works}) != 3:
+    if len(planned_works) != 14:
+        fail(f"expected 14 upcoming works, found {len(planned_works)}")
+    if len({work["id"] for work in planned_works}) != 14:
         fail("upcoming work IDs must be unique")
     skipped_works = catalog.get("skippedWorks", [])
     if len(skipped_works) < 7:

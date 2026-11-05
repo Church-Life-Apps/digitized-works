@@ -440,6 +440,76 @@
       "projectStatus": "in-progress"
     },
     {
+      "id": "ramsay-st-paul-traveller",
+      "author": "William Mitchell Ramsay",
+      "title": "St. Paul the Traveller and the Roman Citizen",
+      "description": "A historical and geographical study of Paul's travels and Roman setting.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "augustine-on-the-trinity",
+      "author": "Augustine of Hippo",
+      "title": "On the Trinity",
+      "description": "Augustine's theological treatise on the Christian doctrine of the Trinity.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "govett-twofoldness-divine-truth",
+      "author": "Robert Govett",
+      "title": "The Twofoldness of Divine Truth",
+      "description": "An examination of paired and seemingly contrasting truths in Scripture.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "luther-commentary-galatians",
+      "author": "Martin Luther",
+      "title": "Commentary on Galatians",
+      "description": "Luther's exposition of Paul's Epistle to the Galatians.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "bruce-training-twelve",
+      "author": "Alexander Balmain Bruce",
+      "title": "The Training of the Twelve",
+      "description": "A study of Christ's preparation of the twelve disciples for their work.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "eusebius-preparation-gospel",
+      "author": "Eusebius of Caesarea",
+      "title": "Preparation for the Gospel",
+      "description": "Eusebius's apologetic work preserved in the complete Gifford translation.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "gill-exposition-whole-bible",
+      "author": "John Gill",
+      "title": "Exposition of the Whole Bible",
+      "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "barnes-notes-whole-bible",
+      "author": "Albert Barnes",
+      "title": "Barnes' Notes on the Bible",
+      "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "mackintosh-notes-pentateuch",
+      "author": "Charles H. Mackintosh",
+      "title": "Notes on the Pentateuch",
+      "description": "A six-volume exposition of the five books of Moses.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "scofield-reference-notes",
+      "author": "C. I. Scofield",
+      "title": "Scofield Reference Notes",
+      "description": "The explanatory notes from the original 1909 and 1917 Scofield Reference Bible.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
       "id": "calvin-commentaries",
       "author": "John Calvin",
       "title": "Calvin's Commentaries",
@@ -451,6 +521,13 @@
       "author": "William Kelly",
       "title": "Bible Commentaries",
       "description": "Kelly's expositions of books of the Bible. We will cover only the titles no publisher currently sells, such as Isaiah, Ezekiel, the Minor Prophets, Acts, Romans and Galatians.",
+      "sourceStatus": "Existing digital text found"
+    },
+    {
+      "id": "govett-revelation",
+      "author": "Robert Govett",
+      "title": "The Apocalypse Expounded by Scripture",
+      "description": "A verse-by-verse exposition of the book of Revelation.",
       "sourceStatus": "Existing digital text found"
     }
   ],
@@ -464,76 +541,12 @@
       "skippedAt": "2026-10-07"
     },
     {
-      "id": "ramsay-st-paul-traveller",
-      "author": "William Mitchell Ramsay",
-      "title": "St. Paul the Traveller and the Roman Citizen",
-      "description": "A historical and geographical study of Paul's travels and Roman setting.",
-      "skipReason": "Still sold by Kregel in a revised edition.",
-      "skippedAt": "2026-10-07"
-    },
-    {
-      "id": "augustine-on-the-trinity",
-      "author": "Augustine of Hippo",
-      "title": "On the Trinity",
-      "description": "Augustine's theological treatise on the Christian doctrine of the Trinity.",
-      "skipReason": "Modern translations are still sold by Catholic University of America Press and New City Press.",
-      "skippedAt": "2026-10-07"
-    },
-    {
-      "id": "govett-twofoldness-divine-truth",
-      "author": "Robert Govett",
-      "title": "The Twofoldness of Divine Truth",
-      "description": "An examination of paired and seemingly contrasting truths in Scripture.",
-      "skipReason": "Still sold by Schoettle Publishing.",
-      "skippedAt": "2026-10-07"
-    },
-    {
       "id": "morgan-exposition-whole-bible",
       "author": "G. Campbell Morgan",
       "title": "An Exposition of the Whole Bible",
       "description": "A chapter-by-chapter exposition of the Bible in one volume.",
       "skipReason": "Still sold by Wipf & Stock.",
       "skippedAt": "2026-10-07"
-    },
-    {
-      "id": "luther-commentary-galatians",
-      "author": "Martin Luther",
-      "title": "Commentary on Galatians",
-      "description": "Luther's exposition of Paul's Epistle to the Galatians.",
-      "skipReason": "Still sold by Crossway in its Classic Commentaries series.",
-      "skippedAt": "2026-10-07"
-    },
-    {
-      "id": "bruce-training-twelve",
-      "author": "Alexander Balmain Bruce",
-      "title": "The Training of the Twelve",
-      "description": "A study of Christ's preparation of the twelve disciples for their work.",
-      "skipReason": "Still sold by Kregel in a 2020 edition.",
-      "skippedAt": "2026-10-07"
-    },
-    {
-      "id": "eusebius-preparation-gospel",
-      "author": "Eusebius of Caesarea",
-      "title": "Preparation for the Gospel",
-      "description": "Eusebius's apologetic work preserved in the complete Gifford translation.",
-      "skipReason": "Wipf & Stock still sells Gifford's translation new, in one volume and in a recent two-volume paperback and hardcover edition.",
-      "skippedAt": "2026-10-14"
-    },
-    {
-      "id": "gill-exposition-whole-bible",
-      "author": "John Gill",
-      "title": "Exposition of the Whole Bible",
-      "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
-      "skipReason": "The Baptist Standard Bearer still sells the complete nine-volume set new in hardback, paperback and ebook.",
-      "skippedAt": "2026-10-15"
-    },
-    {
-      "id": "barnes-notes-whole-bible",
-      "author": "Albert Barnes",
-      "title": "Barnes' Notes on the Bible",
-      "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
-      "skipReason": "Life Sentence Publishing (Aneko Press) is selling a new edition in paperback and Kindle, released book by book since 2024.",
-      "skippedAt": "2026-10-19"
     },
     {
       "id": "robertson-word-pictures-new-testament",
@@ -568,35 +581,11 @@
       "skippedAt": "2026-10-19"
     },
     {
-      "id": "mackintosh-notes-pentateuch",
-      "author": "Charles H. Mackintosh",
-      "title": "Notes on the Pentateuch",
-      "description": "A six-volume exposition of the five books of Moses.",
-      "skipReason": "Believers Bookshelf still sells a new six-volume set.",
-      "skippedAt": "2026-10-19"
-    },
-    {
-      "id": "scofield-reference-notes",
-      "author": "C. I. Scofield",
-      "title": "Scofield Reference Notes",
-      "description": "The explanatory notes from the Scofield Reference Bible.",
-      "skipReason": "Oxford University Press still sells the 1917 Scofield notes.",
-      "skippedAt": "2026-10-19"
-    },
-    {
       "id": "govett-parables",
       "author": "Robert Govett",
       "title": "The Parables of the Kingdom",
       "description": "An exposition of the parables concerning the kingdom of heaven.",
       "skipReason": "Schoettle Publishing still sells Govett on the Parables new.",
-      "skippedAt": "2026-08-26"
-    },
-    {
-      "id": "govett-revelation",
-      "author": "Robert Govett",
-      "title": "The Apocalypse Expounded by Scripture",
-      "description": "A verse-by-verse exposition of the book of Revelation.",
-      "skipReason": "Schoettle Publishing still sells Govett on Revelation new.",
       "skippedAt": "2026-08-26"
     }
   ]
