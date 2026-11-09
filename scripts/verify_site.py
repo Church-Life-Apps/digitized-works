@@ -78,22 +78,16 @@ def main() -> int:
         if work.get("projectStatus") not in (None, "in-progress"):
             fail(f"invalid projectStatus for {work['id']}")
     documents = [document for work in catalog["works"] for document in work["documents"]]
-    if len(documents) != 59:
-        fail("expected fifty-nine available PDFs")
+    if len(documents) != 55:
+        fail("expected fifty-five available PDFs")
     alford_documents = next(
         work["documents"] for work in catalog["works"] if work["id"] == "alford-greek-testament"
     )
-    expected_alford_6x9 = {
-        "alford-nt-v1p1-print-ready-6x9.pdf",
-        "alford-nt-v1p2-print-ready-6x9.pdf",
-        "alford-nt-v2p1-print-ready-6x9.pdf",
-        "alford-nt-v2p2-print-ready-6x9.pdf",
-    }
-    actual_alford_6x9 = {
-        document["asset"] for document in alford_documents if document["id"].endswith("-6x9")
-    }
-    if actual_alford_6x9 != expected_alford_6x9:
-        fail(f"unexpected Alford 6x9 PDFs: {actual_alford_6x9}")
+    alford_print_sizes = [
+        document["asset"] for document in alford_documents if "print-ready" in document["asset"]
+    ]
+    if alford_print_sizes or len(alford_documents) != 4:
+        fail(f"Alford should list only the four letter-size PDFs: {alford_documents}")
     for document in documents:
         path = root / document["pdf"]
         if not path.exists():
