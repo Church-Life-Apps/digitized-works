@@ -60,21 +60,32 @@ def validate_pdf(path: pathlib.Path) -> dict:
     if b"%%EOF" not in data[-4096:]:
         raise SyncError(f"Missing PDF end marker: {path.name}")
 
-    result = subprocess.run(
-        ["pdfinfo", str(path)],
-        check=False,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
-    if result.returncode != 0:
-        raise SyncError(f"pdfinfo rejected {path.name}: {result.stderr.strip()}")
-    fields = {}
-    for line in result.stdout.splitlines():
-        if ":" in line:
-            key, value = line.split(":", 1)
-            fields[key.strip()] = value.strip()
-    pages = int(fields.get("Pages", "0"))
+    if shutil.which("pdfinfo"):
+        result = subprocess.run(
+            ["pdfinfo", str(path)],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        if result.returncode != 0:
+            raise SyncError(f"pdfinfo rejected {path.name}: {result.stderr.strip()}")
+        fields = {}
+        for line in result.stdout.splitlines():
+            if ":" in line:
+                key, value = line.split(":", 1)
+                fields[key.strip()] = value.strip()
+        pages = int(fields.get("Pages", "0"))
+    else:
+        # Fallback when poppler could not be installed on the runner.
+        try:
+            from pypdf import PdfReader
+        except ImportError as exc:
+            raise SyncError("Neither pdfinfo nor pypdf is available") from exc
+        try:
+            pages = len(PdfReader(str(path)).pages)
+        except Exception as exc:  # noqa: BLE001
+            raise SyncError(f"pypdf rejected {path.name}: {exc}") from exc
     if pages < 1:
         raise SyncError(f"No pages found in {path.name}")
     return {
