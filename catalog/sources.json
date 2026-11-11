@@ -408,17 +408,147 @@
           "asset": "keil-delitzsch-v25-{tag}.pdf"
         }
       ]
+    },
+    {
+      "id": "lange-commentary-holy-scriptures",
+      "author": "John Peter Lange",
+      "title": "A Commentary on the Holy Scriptures",
+      "shortTitle": "Commentary on the Holy Scriptures",
+      "description": "Lange's critical, doctrinal and homiletical commentary on the whole Bible and the Apocrypha, in the 25-volume American edition translated and enlarged under Philip Schaff, with textual notes, exegesis and doctrinal and practical sections.",
+      "originalPublication": "New York, Charles Scribner and successors, printings of 1868–1891",
+      "repository": "Church-Life-Apps/digitizing-lange",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "ot-volume-1",
+          "label": "Old Testament 1: Genesis",
+          "asset": "lange-ot01-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-2",
+          "label": "Old Testament 2: Exodus and Leviticus",
+          "asset": "lange-ot02-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-3",
+          "label": "Old Testament 3: Numbers and Deuteronomy",
+          "asset": "lange-ot03-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-4",
+          "label": "Old Testament 4: Joshua, Judges and Ruth",
+          "asset": "lange-ot04-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-5",
+          "label": "Old Testament 5: Samuel",
+          "asset": "lange-ot05-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-6",
+          "label": "Old Testament 6: Kings",
+          "asset": "lange-ot06-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-7",
+          "label": "Old Testament 7: Chronicles, Ezra, Nehemiah and Esther",
+          "asset": "lange-ot07-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-8",
+          "label": "Old Testament 8: Job",
+          "asset": "lange-ot08-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-9",
+          "label": "Old Testament 9: Psalms",
+          "asset": "lange-ot09-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-10",
+          "label": "Old Testament 10: Proverbs, Ecclesiastes and the Song of Solomon",
+          "asset": "lange-ot10-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-11",
+          "label": "Old Testament 11: Isaiah",
+          "asset": "lange-ot11-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-12",
+          "label": "Old Testament 12: Jeremiah and Lamentations",
+          "asset": "lange-ot12-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-13",
+          "label": "Old Testament 13: Ezekiel and Daniel",
+          "asset": "lange-ot13-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-14",
+          "label": "Old Testament 14: The Minor Prophets",
+          "asset": "lange-ot14-{tag}.pdf"
+        },
+        {
+          "id": "ot-volume-15",
+          "label": "Old Testament 15: The Apocrypha",
+          "asset": "lange-ot15-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-1",
+          "label": "New Testament 1: Matthew",
+          "asset": "lange-nt01-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-2",
+          "label": "New Testament 2: Mark and Luke",
+          "asset": "lange-nt02-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-3",
+          "label": "New Testament 3: John",
+          "asset": "lange-nt03-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-4",
+          "label": "New Testament 4: Acts",
+          "asset": "lange-nt04-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-5",
+          "label": "New Testament 5: Romans",
+          "asset": "lange-nt05-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-6",
+          "label": "New Testament 6: Corinthians",
+          "asset": "lange-nt06-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-7",
+          "label": "New Testament 7: Galatians, Ephesians, Philippians and Colossians",
+          "asset": "lange-nt07-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-8",
+          "label": "New Testament 8: Thessalonians, Timothy, Titus, Philemon and Hebrews",
+          "asset": "lange-nt08-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-9",
+          "label": "New Testament 9: James, Peter, John and Jude",
+          "asset": "lange-nt09-{tag}.pdf"
+        },
+        {
+          "id": "nt-volume-10",
+          "label": "New Testament 10: Revelation, with an Index",
+          "asset": "lange-nt10-{tag}.pdf"
+        }
+      ]
     }
   ],
   "plannedWorks": [
-    {
-      "id": "lange-commentary-holy-scriptures",
-      "author": "Johann Peter Lange",
-      "title": "A Commentary on the Holy Scriptures",
-      "description": "A multi-volume theological and homiletical commentary on the Bible.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
     {
       "id": "ramsay-st-paul-traveller",
       "author": "William Mitchell Ramsay",
