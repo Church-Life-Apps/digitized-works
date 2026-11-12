@@ -546,17 +546,27 @@
           "asset": "lange-nt10-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "ramsay-st-paul-traveller",
       "author": "William Mitchell Ramsay",
       "title": "St. Paul the Traveller and the Roman Citizen",
-      "description": "A historical and geographical study of Paul's travels and Roman setting.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "St. Paul the Traveller",
+      "description": "Ramsay's historical and geographical study of Paul's journeys in Acts and the Roman world in which he travelled, from the Morgan and Mansfield College lectures.",
+      "originalPublication": "London, Hodder and Stoughton, 1895",
+      "repository": "Church-Life-Apps/digitizing-ramsay",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "complete",
+          "label": "Complete work",
+          "asset": "ramsay-st-paul-the-traveller-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "augustine-on-the-trinity",
       "author": "Augustine of Hippo",
