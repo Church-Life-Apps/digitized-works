@@ -600,17 +600,27 @@
           "asset": "luther-commentary-galatians-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "bruce-training-twelve",
       "author": "Alexander Balmain Bruce",
       "title": "The Training of the Twelve",
-      "description": "A study of Christ's preparation of the twelve disciples for their work.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "The Training of the Twelve",
+      "description": "Bruce's study of how Christ prepared the twelve disciples for their apostolic work, from the 1898 fifth edition of the revised text.",
+      "originalPublication": "Edinburgh, T. & T. Clark, 1898",
+      "repository": "Church-Life-Apps/digitizing-bruce-training-twelve",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "complete",
+          "label": "Complete work",
+          "asset": "bruce-training-twelve-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "eusebius-preparation-gospel",
       "author": "Eusebius of Caesarea",
