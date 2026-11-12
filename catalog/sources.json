@@ -564,17 +564,27 @@
           "asset": "ramsay-st-paul-the-traveller-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "augustine-on-the-trinity",
       "author": "Augustine of Hippo",
       "title": "On the Trinity",
-      "description": "Augustine's theological treatise on the Christian doctrine of the Trinity.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "On the Trinity",
+      "description": "Augustine's fifteen books on the doctrine of the Trinity, in Arthur West Haddan's English translation from the T. & T. Clark edition of Augustine's works.",
+      "originalPublication": "Edinburgh, T. & T. Clark, 1873",
+      "repository": "Church-Life-Apps/digitizing-augustine-trinity",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "complete",
+          "label": "Complete work",
+          "asset": "augustine-on-the-trinity-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "govett-twofoldness-divine-truth",
       "author": "Robert Govett",
