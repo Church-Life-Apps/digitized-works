@@ -586,13 +586,6 @@
   ],
   "plannedWorks": [
     {
-      "id": "govett-twofoldness-divine-truth",
-      "author": "Robert Govett",
-      "title": "The Twofoldness of Divine Truth",
-      "description": "An examination of paired and seemingly contrasting truths in Scripture.",
-      "sourceStatus": "Existing digital text found"
-    },
-    {
       "id": "luther-commentary-galatians",
       "author": "Martin Luther",
       "title": "Commentary on Galatians",
@@ -719,6 +712,14 @@
       "description": "An exposition of the parables concerning the kingdom of heaven.",
       "skipReason": "Our earlier work used a 1989 edition, which is under copyright, and we have not confirmed an older scan.",
       "skippedAt": "2026-08-26"
+    },
+    {
+      "id": "govett-twofoldness-divine-truth",
+      "author": "Robert Govett",
+      "title": "The Twofoldness of Divine Truth",
+      "description": "An examination of paired and seemingly contrasting truths in Scripture.",
+      "skipReason": "The only scan we could find is a 2003 Schoettle reprint, and no copy of the original 1892 printing has been scanned.",
+      "skippedAt": "2026-11-12"
     }
   ]
 }
