@@ -582,17 +582,27 @@
           "asset": "augustine-on-the-trinity-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "luther-commentary-galatians",
       "author": "Martin Luther",
-      "title": "Commentary on Galatians",
-      "description": "Luther's exposition of Paul's Epistle to the Galatians.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "title": "A Commentary on Saint Paul's Epistle to the Galatians",
+      "shortTitle": "Commentary on Galatians",
+      "description": "Luther's exposition of Paul's Epistle to the Galatians, in the English translation of 1575 revised and corrected, with Middleton's Life of Luther.",
+      "originalPublication": "London, B. Blake, 1832",
+      "repository": "Church-Life-Apps/digitizing-luther-galatians",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "complete",
+          "label": "Complete work",
+          "asset": "luther-commentary-galatians-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "bruce-training-twelve",
       "author": "Alexander Balmain Bruce",
