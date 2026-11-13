@@ -618,17 +618,32 @@
           "asset": "bruce-training-twelve-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "eusebius-preparation-gospel",
       "author": "Eusebius of Caesarea",
       "title": "Preparation for the Gospel",
-      "description": "Eusebius's apologetic work preserved in the complete Gifford translation.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "Preparation for the Gospel",
+      "description": "Eusebius's apologetic work in fifteen books, in E. H. Gifford's complete English translation from the Oxford edition of 1903.",
+      "originalPublication": "Oxford, Clarendon Press, 1903",
+      "repository": "Church-Life-Apps/digitizing-eusebius-preparation-gospel",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "part-1",
+          "label": "Part 1, Books I–IX",
+          "asset": "eusebius-preparation-gospel-part1-{tag}.pdf"
+        },
+        {
+          "id": "part-2",
+          "label": "Part 2, Books X–XV",
+          "asset": "eusebius-preparation-gospel-part2-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "gill-exposition-whole-bible",
       "author": "John Gill",
