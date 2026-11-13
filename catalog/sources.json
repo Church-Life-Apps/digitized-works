@@ -649,7 +649,8 @@
       "author": "John Gill",
       "title": "Exposition of the Whole Bible",
       "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
-      "sourceStatus": "Existing digital text found"
+      "sourceStatus": "Existing digital text found",
+      "projectStatus": "in-progress"
     },
     {
       "id": "barnes-notes-whole-bible",
