@@ -641,17 +641,67 @@
           "asset": "eusebius-preparation-gospel-part2-{tag}.pdf"
         }
       ]
-    }
-  ],
-  "plannedWorks": [
+    },
     {
       "id": "gill-exposition-whole-bible",
       "author": "John Gill",
       "title": "Exposition of the Whole Bible",
-      "description": "A phrase-by-phrase exposition of the whole Bible, published from 1746 to 1766.",
-      "sourceStatus": "Existing digital text found",
-      "projectStatus": "in-progress"
-    },
+      "shortTitle": "Exposition of the Whole Bible",
+      "description": "Gill's phrase-by-phrase exposition of the Old and New Testaments, from the first London folio edition of 1746 to 1766, set as nine volumes in Bible order.",
+      "originalPublication": "London, 1746–1766",
+      "repository": "Church-Life-Apps/digitizing-gill",
+      "status": "available",
+      "reviewStatus": "ready",
+      "documents": [
+        {
+          "id": "ot1",
+          "label": "Old Testament I, Genesis to Numbers",
+          "asset": "gill-ot1-{tag}.pdf"
+        },
+        {
+          "id": "ot2",
+          "label": "Old Testament II, Deuteronomy to 2 Kings",
+          "asset": "gill-ot2-{tag}.pdf"
+        },
+        {
+          "id": "ot3",
+          "label": "Old Testament III, 1 Chronicles to Psalms",
+          "asset": "gill-ot3-{tag}.pdf"
+        },
+        {
+          "id": "ot4",
+          "label": "Old Testament IV, Psalms to the Song of Songs",
+          "asset": "gill-ot4-{tag}.pdf"
+        },
+        {
+          "id": "ot5",
+          "label": "Old Testament V, Isaiah to Lamentations",
+          "asset": "gill-ot5-{tag}.pdf"
+        },
+        {
+          "id": "ot6",
+          "label": "Old Testament VI, Ezekiel to Malachi",
+          "asset": "gill-ot6-{tag}.pdf"
+        },
+        {
+          "id": "nt1",
+          "label": "New Testament I, Matthew to John",
+          "asset": "gill-nt1-{tag}.pdf"
+        },
+        {
+          "id": "nt2",
+          "label": "New Testament II, John to Galatians",
+          "asset": "gill-nt2-{tag}.pdf"
+        },
+        {
+          "id": "nt3",
+          "label": "New Testament III, Galatians to Revelation",
+          "asset": "gill-nt3-{tag}.pdf"
+        }
+      ]
+    }
+  ],
+  "plannedWorks": [
     {
       "id": "barnes-notes-whole-bible",
       "author": "Albert Barnes",
