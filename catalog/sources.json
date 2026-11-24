@@ -707,7 +707,8 @@
       "author": "Albert Barnes",
       "title": "Barnes' Notes on the Bible",
       "description": "Barnes' extensive explanatory notes on the Old and New Testaments.",
-      "sourceStatus": "Existing digital text found"
+      "sourceStatus": "Existing digital text found",
+      "projectStatus": "in-progress"
     },
     {
       "id": "mackintosh-notes-pentateuch",
